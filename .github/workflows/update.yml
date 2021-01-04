@@ -3,6 +3,7 @@ name: Update Bing image
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
   schedule:
@@ -39,6 +40,8 @@ jobs:
           python crawler.py
       - name: Push changes
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add data/* img/* -f
           git commit -m "Update Bing image." -a
           git push
