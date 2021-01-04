@@ -39,6 +39,6 @@ jobs:
           python crawler.py
       - name: Push changes
         run: |
-          git add data/* img/*
+          git add data/* img/* -f
           git commit -m "Update Bing image." -a
           git push
