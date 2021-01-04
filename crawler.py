@@ -27,7 +27,7 @@ class Crawler(object):
 
     def __init__(self):
         self.host = r"https://www.bing.com"
-        self.json_url = self.host + r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+        self.json_url = self.host + r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US&pid=hp&ensearch=1"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
             "Accept": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -58,9 +58,9 @@ class Crawler(object):
                     self.json_url, headers=self.headers, timeout=self.timeout)
                 resp.encoding = 'utf-8'
                 data = resp.json()
-                # print(data)
+                print(data)
                 if data:
-                    self.data = data
+                    self.data_raw = data
                     break
             except Exception as e:
                 print('\033[31m[ERROR]', e,
@@ -73,9 +73,10 @@ class Crawler(object):
         Parse the JSON data.
         """
         print('\033[32m[INFO] Parsing JSON data...\033[0m')
-        image = self.data.get('images')[0]
+        image = self.data_raw.get('images')[0]
         url = image.get('url')
         urlbase = image.get('urlbase')
+        desc = image.get('desc', '')
         copyright = image.get('copyright')
         copyrightlink = image.get('copyrightlink')
         name = urlbase.split('=')[1]
@@ -86,6 +87,7 @@ class Crawler(object):
 
         self.data['name'] = name
         self.data['urlbase'] = urlbase
+        self.data['desc'] = desc
         self.data['copyright'] = copyright
         self.data['copyrightlink'] = copyrightlink
         print(self.data)
