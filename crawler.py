@@ -130,6 +130,9 @@ class Crawler(object):
         Push to Telegram channel using bot API.
         """
         print('\033[32m[INFO] Pushing to Telegram channel...\033[0m')
+        bot_token = str(os.environ.get('BOTTOKEN'))
+        channel_id = str(os.environ.get('CHANNELID'))
+        print(bot_token[:3], channel_id[:3])  # debug
         # TODO return file ID.
         self.data['telegram'] = []
         return []
