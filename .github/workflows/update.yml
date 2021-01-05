@@ -38,10 +38,13 @@ jobs:
         run: |
           export TZ=Asia/Shanghai
           python crawler.py
+        env:
+          BOTTOKEN: ${{ secrets.BOTTOKEN }}
+          CHANNELID: ${{ secrets.CHANNELID }}
       - name: Push changes
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "Bing Image Bot"
           git add data/* img/* -f
           git commit -m "Update Bing image." -a
           git push

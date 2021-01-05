@@ -27,7 +27,8 @@ class Crawler(object):
 
     def __init__(self):
         self.host = r"https://www.bing.com"
-        self.json_url = self.host + r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US&pid=hp&ensearch=1"
+        self.json_url = self.host + \
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US&pid=hp&ensearch=1"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
             "Accept": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -102,7 +103,7 @@ class Crawler(object):
         if not os.path.exists(f"./img/{self.date}/"):
             os.mkdir(f"./img/{self.date}/")
 
-        data_url = []
+        data_url = {}
         for img_size in self.img_size_list:
             print(img_size)
             retry_cnt = 4
@@ -113,7 +114,7 @@ class Crawler(object):
                         url, headers=self.headers, timeout=self.timeout).content
                     with open(f'img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                         f.write(img_raw)
-                    data_url.append({img_size: url})
+                    data_url[img_size] = url
                     break
                 except Exception as e:
                     print('\033[31m[ERROR]', e,
@@ -129,6 +130,9 @@ class Crawler(object):
         Push to Telegram channel using bot API.
         """
         print('\033[32m[INFO] Pushing to Telegram channel...\033[0m')
+        bot_token = str(os.environ.get('BOTTOKEN'))
+        channel_id = str(os.environ.get('CHANNELID'))
+        print(bot_token[:3], channel_id[:3])  # debug
         # TODO return file ID.
         self.data['telegram'] = []
         return []
