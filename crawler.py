@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210105
+@UpdateTime: 20210109
 """
 
 import os
@@ -43,6 +43,9 @@ class Crawler(object):
         self.img_size_list = ['UHD', '1920x1080', '1024x768', '1366x768', '800x480',
                               # Mobile
                               '1080x1920', '480x800']
+        # images to be pushed and their names
+        self.img_push_size_list = ['UHD', '1920x1080', '1080x1920']
+        self.img_push_name_list = ['4K+', '1080p', 'Mobile']
         self.date = datetime.datetime.now().strftime("%Y-%m-%d")
         self.data = {}
 
@@ -125,17 +128,103 @@ class Crawler(object):
         self.data['url'] = data_url
         return data_url
 
+    def replace_entities(self, string: str):
+        """
+        replace HTML entities `<`, `>`, `&` 
+        """
+        return string.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
     def telegram_push(self):
         """
-        Push to Telegram channel using bot API.
+        Push images to Telegram channel using bot API.
         """
         print('\033[32m[INFO] Pushing to Telegram channel...\033[0m')
         bot_token = str(os.environ.get('BOTTOKEN'))
-        channel_id = str(os.environ.get('CHANNELID'))
-        print(bot_token[:3], channel_id[:3])  # debug
-        # TODO return file ID.
-        self.data['telegram'] = []
-        return []
+        channel_id_main = str(os.environ.get('CHANNELIDMAIN'))
+        channel_id_archieve = str(os.environ.get('CHANNELIDARCHIEVE'))
+
+        # DEBUG
+        # bot_token = ''
+        # channel_id_main = '-1001214433840'
+        # channel_id_archieve = '-1001373757531'
+
+        api_url_base = f'https://api.telegram.org/bot{bot_token}/'
+        api_send_message = api_url_base + 'sendMessage'
+        api_send_photo = api_url_base + 'sendPhoto'
+        api_send_document = api_url_base + 'sendDocument'
+
+        # push raw images to archieve channel
+        print('\033[33m[INFO] TG: Pushing raw images to archieve channel...\033[0m')
+        tg_archieve = {}
+        for photo_size in self.data['url']:
+            print(photo_size)
+            photo_url = self.data['url'].get(photo_size)
+            if photo_size == 'UHD':
+                # TODO: get photo raw size
+                raw_size = photo_size
+                caption = f'#{photo_size}\n<b>{self.name}_{raw_size}</b>'
+            else:
+                caption = f'#{photo_size}\n<b>{self.name}_{photo_size}</b>'
+            payload = {'chat_id': channel_id_archieve, 'document': photo_url,
+                       'caption': caption, 'parse_mode': 'HTML'}
+            # print(payload)
+            resp = requests.post(api_send_document, data=payload,
+                                 timeout=self.timeout)
+            resp.encoding = 'utf-8'
+            print(resp.json())
+            result = resp.json().get('result')
+            message_id = result.get('message_id')
+            file_id = result.get('document').get('file_id')
+            tg_archieve[photo_size] = {
+                'message_id': message_id, 'file_id': file_id}
+            print('----------')
+        print('\033[33m=============\033[0m')
+        print()
+
+        # push copyright and description
+        print('\033[33m[INFO] TG: Pushing copyright and description...\033[0m')
+        text = '<b>' + self.replace_entities(self.data['copyright']) + \
+            '</b>\n\n' + self.replace_entities(self.data['desc'])
+        payload = {'chat_id': channel_id_archieve,
+                   'text': text, 'parse_mode': 'HTML'}
+        # print(payload)
+        resp = requests.post(api_send_message, data=payload,
+                             timeout=self.timeout)
+        resp.encoding = 'utf-8'
+        print(resp.json())
+        result = resp.json().get('result')
+        tg_story_message_id = result.get('message_id')
+        print('\033[33m=============\033[0m')
+        print()
+
+        # push image to main channel with links of the archieve channel
+        print('\033[33m[INFO] TG: Pushing the image to main channel...\033[0m')
+        if self.data['url'].get('UHD'):
+            photo = self.data['url'].get('UHD')
+        else:
+            photo = self.data['url'].get('1920x1080')
+        caption = '<b>' + \
+            self.replace_entities(self.data['copyright']) + '</b>\n' + \
+            f'<a href="https://t.me/BingImageArchive/{str(tg_story_message_id)}">Story</a>'
+
+        for i, v in enumerate(self.img_push_size_list):
+            if v in tg_archieve.keys():
+                message_id = tg_archieve[v].get('message_id')
+                display_name = self.img_push_name_list[i]
+                caption += ' | '
+                caption += f'<a href="https://t.me/BingImageArchive/{str(message_id)}">{display_name}</a>'
+        payload = {'chat_id': channel_id_main, 'photo': photo, 'caption': caption,
+                   'parse_mode': 'HTML', 'disable_web_page_preview': True}
+        print(payload)
+        resp = requests.post(api_send_photo, data=payload,
+                             timeout=self.timeout)
+        resp.encoding = 'utf-8'
+        print(resp.json())
+        result = resp.json().get('result')
+        tg_photo = result.get('photo')
+        print('\033[33m=============\033[0m')
+        print()
+        self.data['telegram'] = {'archieve': tg_archieve, 'photo': tg_photo}
 
     def save_data(self):
         """
@@ -152,11 +241,16 @@ class Crawler(object):
         """
         print("\033[32m[INFO] Job start! \033[0m")
         self.get_json()
+        print()
         self.parse_info()
+        print()
         self.download_img()
+        print()
         self.telegram_push()
         print(self.data)
+        print()
         self.save_data()
+        print()
         print("\033[32m[INFO] Job finish! \033[0m")
 
 
