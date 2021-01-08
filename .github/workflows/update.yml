@@ -40,7 +40,8 @@ jobs:
           python crawler.py
         env:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
-          CHANNELID: ${{ secrets.CHANNELID }}
+          CHANNELIDMAIN: ${{ secrets.CHANNELIDMAIN }}
+          CHANNELIDARCHIEVE: ${{ secrets.CHANNELIDARCHIEVE }}
       - name: Push changes
         run: |
           git config --local user.email "action@github.com"
