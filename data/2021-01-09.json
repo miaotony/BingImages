@@ -13,5 +13,66 @@
     "1080x1920": "https://www.bing.com/th?id=OHR.FoucaultsPendulum_EN-US5851164547_1080x1920.jpg",
     "480x800": "https://www.bing.com/th?id=OHR.FoucaultsPendulum_EN-US5851164547_480x800.jpg"
   },
-  "telegram": []
+  "telegram": {
+    "archieve": {
+      "UHD": {
+        "message_id": 43,
+        "file_id": "BQACAgQAAx0EUeHgWwADK1_4w4z24K5rPVaBYZHfvAQlH259AAJEAgACJdnNU9n6TaVJMH_IHgQ"
+      },
+      "1920x1080": {
+        "message_id": 44,
+        "file_id": "BQACAgQAAx0EUeHgWwADLF_4w42fu5k9ns8dkClV1RBDiJ5IAAJsAgACleTMU1m3Cf0s4kMNHgQ"
+      },
+      "1024x768": {
+        "message_id": 45,
+        "file_id": "BQACAgQAAx0EUeHgWwADLV_4w49E-MavKR2blZ4z7jj_dx5NAAJoAgACgJDMU9s0R328kb4nHgQ"
+      },
+      "1366x768": {
+        "message_id": 46,
+        "file_id": "BQACAgQAAx0EUeHgWwADLl_4w5DJcZpuxmUDg6FDV5R3c8y8AAJcAgACj3fMUwp8xe9dCpQ9HgQ"
+      },
+      "800x480": {
+        "message_id": 47,
+        "file_id": "BQACAgQAAx0EUeHgWwADL1_4w5HlpAT4Fn2a5LNjOhqkY90XAAKXAgACclnNU95f5tLHMQABwB4E"
+      },
+      "1080x1920": {
+        "message_id": 48,
+        "file_id": "BQACAgQAAx0EUeHgWwADMF_4w5M-KAKVZXsCocNk4Ac0UeH-AAJZAgACZdXMU9o1VsuX-PLvHgQ"
+      },
+      "480x800": {
+        "message_id": 49,
+        "file_id": "BQACAgQAAx0EUeHgWwADMV_4w5SDt3D51sqUyyYmfa5Y4mYaAAKhAgACwC3NU056d6_4Hc5bHgQ"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADEF_4w5UU4VrgT22xg49ACp2QmaxvAAIIrDEb34zNU0OQ5BnfnzsHfZokKl0AAwEAAwIAA20AA-46AQABHgQ",
+        "file_unique_id": "AQADfZokKl0AA-46AQAB",
+        "file_size": 16377,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADEF_4w5UU4VrgT22xg49ACp2QmaxvAAIIrDEb34zNU0OQ5BnfnzsHfZokKl0AAwEAAwIAA3gAA-86AQABHgQ",
+        "file_unique_id": "AQADfZokKl0AA-86AQAB",
+        "file_size": 73399,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADEF_4w5UU4VrgT22xg49ACp2QmaxvAAIIrDEb34zNU0OQ5BnfnzsHfZokKl0AAwEAAwIAA3kAA_A6AQABHgQ",
+        "file_unique_id": "AQADfZokKl0AA_A6AQAB",
+        "file_size": 164172,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADEF_4w5UU4VrgT22xg49ACp2QmaxvAAIIrDEb34zNU0OQ5BnfnzsHfZokKl0AAwEAAwIAA3cAA_E6AQABHgQ",
+        "file_unique_id": "AQADfZokKl0AA_E6AQAB",
+        "file_size": 834843,
+        "width": 2560,
+        "height": 1440
+      }
+    ]
+  }
 }
