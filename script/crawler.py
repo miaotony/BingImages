@@ -244,6 +244,7 @@ class Crawler(object):
         run job
         """
         print("\033[32m[INFO] Job start! \033[0m")
+        time_start = time.time()
         self.get_json()
         print()
         self.parse_info()
@@ -256,6 +257,23 @@ class Crawler(object):
         self.save_data()
         print()
         print("\033[32m[INFO] Job finish! \033[0m")
+        print(time.time()-time_start)
+
+    def wait_for_run(self):
+        """
+        run at a specific time
+        """
+        print("\033[32m[INFO] Waiting for the specific execution time... \033[0m")
+        d_time = datetime.datetime.strptime(
+            str(datetime.datetime.now().date()) + '16:02', '%Y-%m-%d%H:%M')
+        print(d_time)
+        while True:
+            n_time = datetime.datetime.now()
+            print(n_time)
+            if n_time >= d_time:
+                break
+            time.sleep(30)
+        self.run()
 
 
 if __name__ == "__main__":
@@ -264,9 +282,8 @@ if __name__ == "__main__":
     if not os.path.exists("../img/"):
         os.mkdir("../img/")
     crawler = Crawler()
-    time_start = time.time()
     time_now = datetime.datetime.now()
     print("\033[32m[INFO] time_now: ", time_now, '\033[0m')
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
-    crawler.run()
-    print(time.time()-time_start)
+    # crawler.run()
+    crawler.wait_for_run()
