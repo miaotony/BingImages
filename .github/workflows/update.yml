@@ -10,8 +10,8 @@ on:
       - 'script/crawler.py'
       - '.github/workflows/update.yml'
   schedule:
-    # 16:05 every day Asia/Shanghai
-    - cron: "5 8 * * *"
+    # 15:00 every day Asia/Shanghai
+    - cron: "0 7 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
