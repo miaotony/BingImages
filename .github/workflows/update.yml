@@ -48,4 +48,4 @@ jobs:
           git config --local user.name "Bing Image Bot"
           git add data/* img/* -f
           git commit -m "Update Bing image." -a
-          git push
+          git push || echo "No changes to commit."

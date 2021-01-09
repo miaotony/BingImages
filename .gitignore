@@ -131,3 +131,4 @@ dmypy.json
 # data
 data/
 img/
+secret.py
