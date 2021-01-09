@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210109
+@UpdateTime: 20210110
 """
 
 import os
@@ -105,8 +105,8 @@ class Crawler(object):
         return: {list} url dict 
         """
         print('\033[32m[INFO] Downloading images...\033[0m')
-        if not os.path.exists(f"./img/{self.date}/"):
-            os.mkdir(f"./img/{self.date}/")
+        if not os.path.exists(f"../img/{self.date}/"):
+            os.mkdir(f"../img/{self.date}/")
 
         data_url = {}
         for img_size in self.img_size_list:
@@ -117,7 +117,7 @@ class Crawler(object):
                     url = self.urlbase + '_' + img_size + '.jpg'
                     img_raw = requests.get(
                         url, headers=self.headers, timeout=self.timeout).content
-                    with open(f'img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
+                    with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                         f.write(img_raw)
                     data_url[img_size] = url
                     if img_size == 'UHD':
@@ -235,7 +235,7 @@ class Crawler(object):
         Save all data to local.
         """
         print('\033[32m[INFO] Saving data...\033[0m')
-        with open(f'data/{self.date}.json', 'w', encoding='utf-8') as f:
+        with open(f'../data/{self.date}.json', 'w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False,
                       indent=2,  separators=(',', ': '))
 
@@ -259,10 +259,10 @@ class Crawler(object):
 
 
 if __name__ == "__main__":
-    if not os.path.exists("./data/"):
-        os.mkdir("./data/")
-    if not os.path.exists("./img/"):
-        os.mkdir("./img/")
+    if not os.path.exists("../data/"):
+        os.mkdir("../data/")
+    if not os.path.exists("../img/"):
+        os.mkdir("../img/")
     crawler = Crawler()
     time_start = time.time()
     time_now = datetime.datetime.now()
