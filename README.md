@@ -1,4 +1,5 @@
 # BingImages
+
 Bing Homepage Images / Image of the day / Wallpaper
 
 **Under construction...**
@@ -9,9 +10,10 @@ Bing Homepage Images / Image of the day / Wallpaper
 
 - [x] Crawl the image    
 - [x] Image archive  
-- [ ] Telegram bot Channel push  
+- [x] Web API  
+- [x] Telegram bot Channel push  
 - [ ] Telegram bot: query the image of a specific date  
-- [ ] Web API  
+- [ ] Web frontend  
 - [ ] etc.  
 
 

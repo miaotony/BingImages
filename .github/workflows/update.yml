@@ -25,8 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
         uses: actions/checkout@v2
-        with: 
-          ref: data
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
@@ -38,6 +36,7 @@ jobs:
           cd script
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Update image
         run: |
           export TZ=Asia/Shanghai
@@ -47,10 +46,21 @@ jobs:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
           CHANNELIDMAIN: ${{ secrets.CHANNELIDMAIN }}
           CHANNELIDARCHIEVE: ${{ secrets.CHANNELIDARCHIEVE }}
-      - name: Push changes
+      
+      - name: Move files to archieve
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Bing Image Bot"
-          git add data/* img/* -f
-          git commit -m "Update Bing image." -a
-          git push || echo "No changes to commit."
+          pwd
+          mkdir archieve
+          mv data archieve
+          mv img archieve
+      
+      - name: Push archieves
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GIT_CONFIG_NAME: Bing Image Bot
+          GIT_CONFIG_EMAIL: action@github.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: archieve # The branch the action should deploy to.
+          FOLDER: archieve # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
+          COMMIT_MESSAGE: Update Bing images.
