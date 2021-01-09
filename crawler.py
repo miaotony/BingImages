@@ -18,6 +18,8 @@ import json
 import time
 import random
 import datetime
+from PIL import Image
+from io import BytesIO
 
 
 class Crawler(object):
@@ -118,6 +120,12 @@ class Crawler(object):
                     with open(f'img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                         f.write(img_raw)
                     data_url[img_size] = url
+                    if img_size == 'UHD':
+                        # get image raw size
+                        img = Image.open(BytesIO(img_raw))
+                        raw_size = f'{img.width}x{img.height}'
+                        print(raw_size)
+                        self.img_raw_size = raw_size
                     break
                 except Exception as e:
                     print('\033[31m[ERROR]', e,
@@ -139,14 +147,12 @@ class Crawler(object):
         Push images to Telegram channel using bot API.
         """
         print('\033[32m[INFO] Pushing to Telegram channel...\033[0m')
-        bot_token = str(os.environ.get('BOTTOKEN'))
-        channel_id_main = str(os.environ.get('CHANNELIDMAIN'))
-        channel_id_archieve = str(os.environ.get('CHANNELIDARCHIEVE'))
+        bot_token = os.environ.get('BOTTOKEN')
+        channel_id_main = os.environ.get('CHANNELIDMAIN')
+        channel_id_archieve = os.environ.get('CHANNELIDARCHIEVE')
 
-        # DEBUG
-        # bot_token = ''
-        # channel_id_main = '-1001214433840'
-        # channel_id_archieve = '-1001373757531'
+        if not bot_token:
+            from secret import bot_token, channel_id_main, channel_id_archieve
 
         api_url_base = f'https://api.telegram.org/bot{bot_token}/'
         api_send_message = api_url_base + 'sendMessage'
@@ -160,9 +166,7 @@ class Crawler(object):
             print(photo_size)
             photo_url = self.data['url'].get(photo_size)
             if photo_size == 'UHD':
-                # TODO: get photo raw size
-                raw_size = photo_size
-                caption = f'#{photo_size}\n<b>{self.name}_{raw_size}</b>'
+                caption = f'#{photo_size}\n<b>{self.name}_{self.img_raw_size}</b>'
             else:
                 caption = f'#{photo_size}\n<b>{self.name}_{photo_size}</b>'
             payload = {'chat_id': channel_id_archieve, 'document': photo_url,
