@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+    paths: 
+      - 'script/crawler.py'
+      - '.github/workflows/update.yml'
   schedule:
     # 16:05 every day Asia/Shanghai
     - cron: "5 8 * * *"
@@ -32,11 +35,13 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd script
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Update image
         run: |
           export TZ=Asia/Shanghai
+          cd script
           python crawler.py
         env:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
