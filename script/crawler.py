@@ -18,6 +18,7 @@ import json
 import time
 import random
 import datetime
+import argparse
 from PIL import Image
 from io import BytesIO
 
@@ -282,9 +283,19 @@ if __name__ == "__main__":
         os.mkdir("../data/")
     if not os.path.exists("../img/"):
         os.mkdir("../img/")
+
+    # Parse args
+    parser = argparse.ArgumentParser()
+    parser.description = "Bing Image of The Day Crawler"
+    parser.add_argument(
+        "-w", "--wait", help="Wait until the specific time to run.", action="store_true")
+    args = parser.parse_args()
+
     crawler = Crawler()
     time_now = datetime.datetime.now()
     print("\033[32m[INFO] time_now: ", time_now, '\033[0m')
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
-    # crawler.run()
-    crawler.wait_for_run()
+    if args.wait:
+        crawler.wait_for_run()
+    else:
+        crawler.run()

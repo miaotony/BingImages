@@ -37,7 +37,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Update image
+      - name: Update image with wait
+        if: github.event == 'schedule'
+        run: |
+          export TZ=Asia/Shanghai
+          cd script
+          python crawler.py --wait
+        env:
+          BOTTOKEN: ${{ secrets.BOTTOKEN }}
+          CHANNELIDMAIN: ${{ secrets.CHANNELIDMAIN }}
+          CHANNELIDARCHIEVE: ${{ secrets.CHANNELIDARCHIEVE }}
+          
+      - name: Update image without wait
+        if: github.event != 'schedule'
         run: |
           export TZ=Asia/Shanghai
           cd script
@@ -46,7 +58,7 @@ jobs:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
           CHANNELIDMAIN: ${{ secrets.CHANNELIDMAIN }}
           CHANNELIDARCHIEVE: ${{ secrets.CHANNELIDARCHIEVE }}
-      
+
       - name: Move files to archieve
         run: |
           pwd
