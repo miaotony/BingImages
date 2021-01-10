@@ -126,6 +126,7 @@ class Crawler(object):
                         raw_size = f'{img.width}x{img.height}'
                         print(raw_size)
                         self.img_raw_size = raw_size
+                        self.data['raw_size'] = raw_size
                     break
                 except Exception as e:
                     print('\033[31m[ERROR]', e,
