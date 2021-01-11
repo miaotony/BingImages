@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210110
+@UpdateTime: 20210111
 """
 
 import os
@@ -81,7 +81,7 @@ class Crawler(object):
         """
         print('\033[32m[INFO] Parsing JSON data...\033[0m')
         image = self.data_raw.get('images')[0]
-        url = image.get('url')
+        # url = image.get('url')
         urlbase = image.get('urlbase')
         desc = image.get('desc', '')
         copyright = image.get('copyright')
@@ -151,19 +151,19 @@ class Crawler(object):
         print('\033[32m[INFO] Pushing to Telegram channel...\033[0m')
         bot_token = os.environ.get('BOTTOKEN')
         channel_id_main = os.environ.get('CHANNELIDMAIN')
-        channel_id_archieve = os.environ.get('CHANNELIDARCHIEVE')
+        channel_id_archive = os.environ.get('CHANNELIDARCHIVE')
 
         if not bot_token:
-            from secret import bot_token, channel_id_main, channel_id_archieve
+            from secret import bot_token, channel_id_main, channel_id_archive
 
         api_url_base = f'https://api.telegram.org/bot{bot_token}/'
         api_send_message = api_url_base + 'sendMessage'
         api_send_photo = api_url_base + 'sendPhoto'
         api_send_document = api_url_base + 'sendDocument'
 
-        # push raw images to archieve channel
-        print('\033[33m[INFO] TG: Pushing raw images to archieve channel...\033[0m')
-        tg_archieve = {}
+        # push raw images to archive channel
+        print('\033[33m[INFO] TG: Pushing raw images to archive channel...\033[0m')
+        tg_archive = {}
         for photo_size in self.data['url']:
             print(photo_size)
             photo_url = self.data['url'].get(photo_size)
@@ -171,7 +171,7 @@ class Crawler(object):
                 caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{self.img_raw_size}</b>'
             else:
                 caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{photo_size}</b>'
-            payload = {'chat_id': channel_id_archieve, 'document': photo_url,
+            payload = {'chat_id': channel_id_archive, 'document': photo_url,
                        'caption': caption, 'parse_mode': 'HTML'}
             # print(payload)
             resp = requests.post(api_send_document, data=payload,
@@ -181,7 +181,7 @@ class Crawler(object):
             result = resp.json().get('result')
             message_id = result.get('message_id')
             file_id = result.get('document').get('file_id')
-            tg_archieve[photo_size] = {
+            tg_archive[photo_size] = {
                 'message_id': message_id, 'file_id': file_id}
             print('----------')
         print('\033[33m=============\033[0m')
@@ -191,7 +191,7 @@ class Crawler(object):
         print('\033[33m[INFO] TG: Pushing copyright and description...\033[0m')
         text = self.date + '\n<b>' + self.replace_entities(self.data['copyright']) + \
             '</b>\n\n' + self.replace_entities(self.data['desc'])
-        payload = {'chat_id': channel_id_archieve,
+        payload = {'chat_id': channel_id_archive,
                    'text': text, 'parse_mode': 'HTML'}
         # print(payload)
         resp = requests.post(api_send_message, data=payload,
@@ -203,7 +203,7 @@ class Crawler(object):
         print('\033[33m=============\033[0m')
         print()
 
-        # push image to main channel with links of the archieve channel
+        # push image to main channel with links of the archive channel
         print('\033[33m[INFO] TG: Pushing the image to main channel...\033[0m')
         if self.data['url'].get('UHD'):
             photo = self.data['url'].get('UHD')
@@ -214,8 +214,8 @@ class Crawler(object):
             f'<a href="https://t.me/BingImageArchive/{str(tg_story_message_id)}">Story</a>'
 
         for i, v in enumerate(self.img_push_size_list):
-            if v in tg_archieve.keys():
-                message_id = tg_archieve[v].get('message_id')
+            if v in tg_archive.keys():
+                message_id = tg_archive[v].get('message_id')
                 display_name = self.img_push_name_list[i]
                 caption += ' | '
                 caption += f'<a href="https://t.me/BingImageArchive/{str(message_id)}">{display_name}</a>'
@@ -230,7 +230,7 @@ class Crawler(object):
         tg_photo = result.get('photo')
         print('\033[33m=============\033[0m')
         print()
-        self.data['telegram'] = {'archieve': tg_archieve, 'photo': tg_photo}
+        self.data['telegram'] = {'archive': tg_archive, 'photo': tg_photo}
 
     def save_data(self):
         """
