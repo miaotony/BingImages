@@ -168,9 +168,9 @@ class Crawler(object):
             print(photo_size)
             photo_url = self.data['url'].get(photo_size)
             if photo_size == 'UHD':
-                caption = f'#{photo_size}\n<b>{self.name}_{self.img_raw_size}</b>'
+                caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{self.img_raw_size}</b>'
             else:
-                caption = f'#{photo_size}\n<b>{self.name}_{photo_size}</b>'
+                caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{photo_size}</b>'
             payload = {'chat_id': channel_id_archieve, 'document': photo_url,
                        'caption': caption, 'parse_mode': 'HTML'}
             # print(payload)
@@ -189,7 +189,7 @@ class Crawler(object):
 
         # push copyright and description
         print('\033[33m[INFO] TG: Pushing copyright and description...\033[0m')
-        text = '<b>' + self.replace_entities(self.data['copyright']) + \
+        text = self.date + '\n<b>' + self.replace_entities(self.data['copyright']) + \
             '</b>\n\n' + self.replace_entities(self.data['desc'])
         payload = {'chat_id': channel_id_archieve,
                    'text': text, 'parse_mode': 'HTML'}
