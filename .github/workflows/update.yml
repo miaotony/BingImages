@@ -15,7 +15,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -51,7 +50,7 @@ jobs:
         env:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
           CHANNELIDMAIN: ${{ secrets.CHANNELIDMAIN }}
-          CHANNELIDARCHIEVE: ${{ secrets.CHANNELIDARCHIEVE }}
+          CHANNELIDARCHIVE: ${{ secrets.CHANNELIDARCHIVE }}
           
       - name: Update image without wait
         if: github.event_name != 'schedule'
@@ -62,22 +61,22 @@ jobs:
         env:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
           CHANNELIDMAIN: ${{ secrets.CHANNELIDMAIN }}
-          CHANNELIDARCHIEVE: ${{ secrets.CHANNELIDARCHIEVE }}
+          CHANNELIDARCHIVE: ${{ secrets.CHANNELIDARCHIVE }}
 
-      - name: Move files to archieve
+      - name: Move files to archive
         run: |
           pwd
-          mkdir archieve
-          mv data archieve
-          mv img archieve
+          mkdir archive
+          mv data archive
+          mv img archive
       
-      - name: Push archieves
+      - name: Push archives
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GIT_CONFIG_NAME: Bing Image Bot
           GIT_CONFIG_EMAIL: action@github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: archieve # The branch the action should deploy to.
-          FOLDER: archieve # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          BRANCH: archive # The branch the action should deploy to.
+          FOLDER: archive # The folder the action should deploy.
+          CLEAN: false # Don't automatically remove deleted files from the deploy branch.
           COMMIT_MESSAGE: Update Bing images.
