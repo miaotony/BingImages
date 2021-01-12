@@ -1,0 +1,79 @@
+{
+  "name": "OHR.IceSailing_EN-US4693631571",
+  "urlbase": "/th?id=OHR.IceSailing_EN-US4693631571",
+  "desc": "New York's Hudson River, winter of 2014: Temperatures were so cold for so long that sailors were able to take their antique wooden ice yachts out for a sail on this 20-mile stretch of thick ice. It was a rare sight for the area. Global warming meant that the Hudson River hadn't frozen thick enough for safe iceboating in years.",
+  "copyright": "Antique iceboats on the frozen Hudson River near Astor Point in Barrytown, New York (© Mike Segar/REUTERS)",
+  "copyrightlink": "/search?q=ice+sailing+on+the+Hudson+River&form=hpcapt&filters=HpDate%3a%2220210112_0800%22",
+  "raw_size": "2700x1519",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.IceSailing_EN-US4693631571_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 140,
+        "file_id": "BQACAgQAAx0EUeHgWwADjF_9V5AInau-ECCfVPz8NDiArmjYAAJeAgAC0h3tUzd2r9VVbPeTHgQ"
+      },
+      "1920x1080": {
+        "message_id": 141,
+        "file_id": "BQACAgQAAx0EUeHgWwADjV_9V5E-vUw49YXlfSi69YJ_V58PAAJSAgACWGfsU32G1lf-mxbbHgQ"
+      },
+      "1024x768": {
+        "message_id": 142,
+        "file_id": "BQACAgQAAx0EUeHgWwADjl_9V5PgsxsdsDq25cPL7ZVhBVUEAAJ5AgACIl3tU4QENxaZIaz4HgQ"
+      },
+      "1366x768": {
+        "message_id": 143,
+        "file_id": "BQACAgQAAx0EUeHgWwADj1_9V5T08ZLmhXMpcdWaILdlSFrXAAJRAgACw4H0U6G2w0f8Y8s2HgQ"
+      },
+      "800x480": {
+        "message_id": 144,
+        "file_id": "BQACAgQAAx0EUeHgWwADkF_9V5VUfJG_FV5vt5jDR8S6fxNFAAJvAgAC3PrtU_m26randLm6HgQ"
+      },
+      "1080x1920": {
+        "message_id": 145,
+        "file_id": "BQACAgQAAx0EUeHgWwADkV_9V5fCtczfdItyvLc56PkQNXcxAAJmAgACVa3tU4JmyBdSfTtmHgQ"
+      },
+      "480x800": {
+        "message_id": 146,
+        "file_id": "BQACAgQAAx0EUeHgWwADkl_9V5lDaerQ3Up30PQ5JHGGUc9EAAJbAgACt5LtUyCBWe1AzSmRHgQ"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHF_9V5p9MXa030DH1WIJyhlWNTsHAALRqzEbsM7tU3GOUICAStiTi8emJ10AAwEAAwIAA20AAxEhBAABHgQ",
+        "file_unique_id": "AQADi8emJ10AAxEhBAAB",
+        "file_size": 10625,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHF_9V5p9MXa030DH1WIJyhlWNTsHAALRqzEbsM7tU3GOUICAStiTi8emJ10AAwEAAwIAA3gAAxIhBAABHgQ",
+        "file_unique_id": "AQADi8emJ10AAxIhBAAB",
+        "file_size": 53768,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHF_9V5p9MXa030DH1WIJyhlWNTsHAALRqzEbsM7tU3GOUICAStiTi8emJ10AAwEAAwIAA3kAAxMhBAABHgQ",
+        "file_unique_id": "AQADi8emJ10AAxMhBAAB",
+        "file_size": 121554,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHF_9V5p9MXa030DH1WIJyhlWNTsHAALRqzEbsM7tU3GOUICAStiTi8emJ10AAwEAAwIAA3cAAxQhBAABHgQ",
+        "file_unique_id": "AQADi8emJ10AAxQhBAAB",
+        "file_size": 429689,
+        "width": 2560,
+        "height": 1440
+      }
+    ]
+  }
+}
