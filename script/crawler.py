@@ -48,7 +48,7 @@ class Crawler(object):
                               '1080x1920', '480x800']
         # images to be pushed and their names
         self.img_push_size_list = ['UHD', '1920x1080', '1080x1920']
-        self.img_push_name_list = ['4K+', '1080p', 'Mobile']
+        self.img_push_name_list = ['UHD', '1080p', 'Mobile']
         self.date = datetime.datetime.now().strftime("%Y-%m-%d")
         self.data = {}
 
