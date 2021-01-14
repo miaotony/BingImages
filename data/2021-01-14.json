@@ -1,0 +1,79 @@
+{
+  "name": "OHR.BrightonSnow_EN-US6152076231",
+  "urlbase": "/th?id=OHR.BrightonSnow_EN-US6152076231",
+  "desc": "We're getting chilly just looking at these snow-covered beach huts in England—and that cyclist slogging through the white stuff. But in the summer, these huts in Brighton and Hove (neighboring towns that share a local government) are in major demand. You can't stay in them overnight, but they give you a place to change your clothes and stash your belongings, which makes a day at the beach less messy and generally more pleasant. The seaside resort area is also known for attractions like Brighton Palace Pier, which offers amusement park rides and fast food, and the i360 tower, which takes visitors 450 feet up for a 360-degree view across Brighton, the South Downs, and English Channel.",
+  "copyright": "Beach huts covered in snow in Brighton and Hove, England (© Tim Jones/Alamy)",
+  "copyrightlink": "/search?q=brighton+and+hove+england&FORM=hpcapt&filters=HpDate%3a%2220210114_0800%22",
+  "raw_size": "4120x2318",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.BrightonSnow_EN-US6152076231_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 156,
+        "file_id": "BQACAgQAAx0EUeHgWwADnF__-ojgFt0Eed-dtpdu9zsTDCdBAALTAgAC0FAFUEji1x37BX2RHgQ"
+      },
+      "1920x1080": {
+        "message_id": 157,
+        "file_id": "BQACAgQAAx0EUeHgWwADnV__-opXWcntYIpi6eCf0HxOqiulAAJuAgACZ_UFUHNJEXOf-v9-HgQ"
+      },
+      "1024x768": {
+        "message_id": 158,
+        "file_id": "BQACAgQAAx0EUeHgWwADnl__-otdu4DRfILD76mGu5uI4TxFAAKCAgAC6mIFUH86eMHkgIStHgQ"
+      },
+      "1366x768": {
+        "message_id": 159,
+        "file_id": "BQACAgQAAx0EUeHgWwADn1__-o2imH55OIQviEUG_xTzLEEGAAIrAgACGP0EULSSf6lF6wLeHgQ"
+      },
+      "800x480": {
+        "message_id": 160,
+        "file_id": "BQACAgQAAx0EUeHgWwADoF__-o4JEgm84Y_WSeV9W9EGgWVAAAK7AgACJb4EUFRVLsrBPy07HgQ"
+      },
+      "1080x1920": {
+        "message_id": 161,
+        "file_id": "BQACAgQAAx0EUeHgWwADoV__-pB4YXVx4bsC3JTkea_wQlVCAAKRAgACXusFUDlV8MZ9vAXvHgQ"
+      },
+      "480x800": {
+        "message_id": 162,
+        "file_id": "BQACAgQAAx0EUeHgWwADol__-pFjvaQzju4PPb0XvxyoXwABigACigIAAlAzBVDx42ZpTM8Ith4E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHl__-pN4XWjCsJg2IpLE-CUPKeTZAALwqzEbVNUEUFJO8pLTBTZJL8XBKl0AAwEAAwIAA20AA0vpAAIeBA",
+        "file_unique_id": "AQADL8XBKl0AA0vpAAI",
+        "file_size": 8501,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHl__-pN4XWjCsJg2IpLE-CUPKeTZAALwqzEbVNUEUFJO8pLTBTZJL8XBKl0AAwEAAwIAA3gAA0zpAAIeBA",
+        "file_unique_id": "AQADL8XBKl0AA0zpAAI",
+        "file_size": 38714,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHl__-pN4XWjCsJg2IpLE-CUPKeTZAALwqzEbVNUEUFJO8pLTBTZJL8XBKl0AAwEAAwIAA3kAA03pAAIeBA",
+        "file_unique_id": "AQADL8XBKl0AA03pAAI",
+        "file_size": 86098,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADHl__-pN4XWjCsJg2IpLE-CUPKeTZAALwqzEbVNUEUFJO8pLTBTZJL8XBKl0AAwEAAwIAA3cAA07pAAIeBA",
+        "file_unique_id": "AQADL8XBKl0AA07pAAI",
+        "file_size": 298154,
+        "width": 2560,
+        "height": 1440
+      }
+    ]
+  }
+}
