@@ -1,0 +1,79 @@
+{
+  "name": "OHR.ChateauBeynac_EN-US4661331709",
+  "urlbase": "/th?id=OHR.ChateauBeynac_EN-US4661331709",
+  "desc": "Perched high above the Dordogne River in France, the Château de Beynac is one of the best-preserved castles of the Périgord Noir region. This 12th-century fortress has been meticulously restored, showcasing for tourists such delights as a dungeon, 13th-century toilets, and magnificent views of the 'Valley of the Five Castles' below.",
+  "copyright": "Château de Beynac overlooking the Dordogne Valley in France (© Gareth Kirkland/Alamy)",
+  "copyrightlink": "/search?q=chateau+de+beynac&form=hpcapt&filters=HpDate%3a%2220210115_0800%22",
+  "raw_size": "5616x3159",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.ChateauBeynac_EN-US4661331709_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 164,
+        "file_id": "BQACAgQAAx0EUeHgWwADpGABTAsL6P8HTyk3ELy42GIFWEAgAAKkAgACeVQNULrwNoK1OeFyHgQ"
+      },
+      "1920x1080": {
+        "message_id": 165,
+        "file_id": "BQACAgQAAx0EUeHgWwADpWABTAz_HUkxnDfFx9IWVf1XXDfDAAKNAgACe7sNUMY3zP67__mWHgQ"
+      },
+      "1024x768": {
+        "message_id": 166,
+        "file_id": "BQACAgQAAx0EUeHgWwADpmABTA7YLmxJhCSmWkCK62FV93GoAAKAAgACrzgMUK26oSc0gWtfHgQ"
+      },
+      "1366x768": {
+        "message_id": 167,
+        "file_id": "BQACAgQAAx0EUeHgWwADp2ABTBAzQJDJ_ZtdynBDsYKn828MAAJKAgACljIUUPkryso0-MAAAR4E"
+      },
+      "800x480": {
+        "message_id": 168,
+        "file_id": "BQACAgQAAx0EUeHgWwADqGABTBG1lqoM61DumpO-asjIatLPAAKGAgACEKkMUP1Qi9SJvIXYHgQ"
+      },
+      "1080x1920": {
+        "message_id": 169,
+        "file_id": "BQACAgQAAx0EUeHgWwADqWABTBO0Uxc53ynPqYlZRrIgNWgZAAKuAgACj7MNUOQRhWz3Z_JHHgQ"
+      },
+      "480x800": {
+        "message_id": 170,
+        "file_id": "BQACAgQAAx0EUeHgWwADqmABTBQq62bcxxPU9GHTSh4tRRqvAAKcAgAC_-wNUPhaOpCGRycjHgQ"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADH2ABTBUCA71sjrvsRinR30poZsQuAALiqzEbyEwNUHia8ixE4hQoZfPhJl0AAwEAAwIAA20AAxVDBAABHgQ",
+        "file_unique_id": "AQADZfPhJl0AAxVDBAAB",
+        "file_size": 14563,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADH2ABTBUCA71sjrvsRinR30poZsQuAALiqzEbyEwNUHia8ixE4hQoZfPhJl0AAwEAAwIAA3gAAxZDBAABHgQ",
+        "file_unique_id": "AQADZfPhJl0AAxZDBAAB",
+        "file_size": 75428,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADH2ABTBUCA71sjrvsRinR30poZsQuAALiqzEbyEwNUHia8ixE4hQoZfPhJl0AAwEAAwIAA3kAAxdDBAABHgQ",
+        "file_unique_id": "AQADZfPhJl0AAxdDBAAB",
+        "file_size": 178636,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADH2ABTBUCA71sjrvsRinR30poZsQuAALiqzEbyEwNUHia8ixE4hQoZfPhJl0AAwEAAwIAA3cAAxhDBAABHgQ",
+        "file_unique_id": "AQADZfPhJl0AAxhDBAAB",
+        "file_size": 721403,
+        "width": 2560,
+        "height": 1440
+      }
+    ]
+  }
+}
