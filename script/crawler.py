@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210115
+@UpdateTime: 20210116
 """
 
 import os
@@ -31,9 +31,9 @@ class Crawler(object):
     def __init__(self):
         self.host = r"https://www.bing.com"
         self.json_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US&pid=hp&ensearch=1"
-        self.json_cn_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN&pid=hp"
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp"
+        self.json_en_url = self.host + \
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-AU&pid=hp&ensearch=1"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
             "Accept": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -54,78 +54,63 @@ class Crawler(object):
         self.date = datetime.datetime.now().strftime("%Y-%m-%d")
         self.data = {}
 
-    def get_json(self):
+    def get_json(self, url: str):
         """
         Get the data with JSON format from the Bing API.
+        :param url: {str} URL
         :return: JSON data
         """
-        print('\033[32m[INFO] Getting JSON data...\033[0m')
+        print(f'\033[32m[INFO] Getting JSON data... URL: {url}\033[0m')
         retry_cnt = 4
         while retry_cnt > 0:
             try:
                 resp = requests.get(
-                    self.json_url, headers=self.headers, timeout=self.timeout)
+                    url, headers=self.headers, timeout=self.timeout)
                 resp.encoding = 'utf-8'
                 data = resp.json()
                 print(data)
                 if data:
-                    self.data_raw = data
-                    break
+                    return data
             except Exception as e:
                 print('\033[31m[ERROR]', e,
                       '\033[33mRetrying get_json:', retry_cnt, '\033[0m')
             retry_cnt -= 1
             time.sleep(random.uniform(0.5, 1))
 
-    def parse_info(self):
+    def get_info_cn(self):
         """
-        Parse the JSON data.
+        Get and parse the JSON data in Chinese.
         """
-        print('\033[32m[INFO] Parsing JSON data...\033[0m')
-        image = self.data_raw.get('images')[0]
+        print('\033[32m[INFO] Getting and parsing info in Chinese...\033[0m')
+        data_raw = self.get_json(self.json_url)
+        image = data_raw.get('images')[0]
         # url = image.get('url')
         urlbase = image.get('urlbase')
-        desc = image.get('desc', '')
-        copyright = image.get('copyright')
+        copyright_cn = image.get('copyright')
         copyrightlink = image.get('copyrightlink')
         name = urlbase.split('=')[1]
-        print(urlbase, copyright)
-        print()
+        print(urlbase, copyright_cn)
         self.name = name
         self.urlbase = self.host + urlbase
-
         self.data['name'] = name
         self.data['urlbase'] = urlbase
-        self.data['desc'] = desc
-        self.data['copyright'] = copyright
+        self.data['copyright_cn'] = copyright_cn
         self.data['copyrightlink'] = copyrightlink
-        print(self.data)
 
-    def get_copyright_cn(self):
-        """a
-        Get the Chinese copyright data from the Bing API.
-        :return: {str} Copyright in Chinese
+    def get_info_en(self):
         """
-        print(
-            '\033[32m[INFO] Getting and parsing copyright info in Chinese...\033[0m')
-        retry_cnt = 4
-        while retry_cnt > 0:
-            try:
-                resp = requests.get(
-                    self.json_cn_url, headers=self.headers, timeout=self.timeout)
-                resp.encoding = 'utf-8'
-                data = resp.json()
-                # print(data)
-                image = data.get('images')[0]
-                copyright_cn = image.get('copyright')
-                print(copyright_cn)
-                self.data['copyright_cn'] = copyright_cn
-                break
-            except Exception as e:
-                print('\033[31m[ERROR]', e,
-                      '\033[33mRetrying get_json_cn:', retry_cnt, '\033[0m')
-            retry_cnt -= 1
-            time.sleep(random.uniform(0.5, 1))
+        Get the copyright and description info in English.
+        """
+        print('\033[32m[INFO] Getting and parsing info in English...\033[0m')
+        data_raw = self.get_json(self.json_en_url)
+        image = data_raw.get('images')[0]
+        desc = image.get('desc', '')
+        copyright_en = image.get('copyright')
+        print(copyright_en)
+        print()
+        self.data['desc'] = desc
+        self.data['copyright'] = copyright_en
+        print(self.data)
 
     def download_img(self):
         """
@@ -148,7 +133,7 @@ class Crawler(object):
                     with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                         f.write(img_raw)
                     data_url[img_size] = url
-                    
+
                     if img_size == 'UHD':
                         # get image raw size
                         img = Image.open(BytesIO(img_raw))
@@ -287,11 +272,9 @@ class Crawler(object):
         """
         print("\033[32m[INFO] Job start! \033[0m")
         time_start = time.time()
-        self.get_json()
+        self.get_info_cn()
         print()
-        self.parse_info()
-        print()
-        self.get_copyright_cn()
+        self.get_info_en()
         print()
         self.download_img()
         print()
