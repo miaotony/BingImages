@@ -32,6 +32,8 @@ class Crawler(object):
         self.host = r"https://www.bing.com"
         self.json_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US&pid=hp&ensearch=1"
+        self.json_cn_url = self.host + \
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN&pid=hp"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
             "Accept": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -98,7 +100,32 @@ class Crawler(object):
         self.data['copyright'] = copyright
         self.data['copyrightlink'] = copyrightlink
         print(self.data)
-        print()
+
+    def get_copyright_cn(self):
+        """a
+        Get the Chinese copyright data from the Bing API.
+        :return: {str} Copyright in Chinese
+        """
+        print(
+            '\033[32m[INFO] Getting and parsing copyright info in Chinese...\033[0m')
+        retry_cnt = 4
+        while retry_cnt > 0:
+            try:
+                resp = requests.get(
+                    self.json_cn_url, headers=self.headers, timeout=self.timeout)
+                resp.encoding = 'utf-8'
+                data = resp.json()
+                # print(data)
+                image = data.get('images')[0]
+                copyright_cn = image.get('copyright')
+                print(copyright_cn)
+                self.data['copyright_cn'] = copyright_cn
+                break
+            except Exception as e:
+                print('\033[31m[ERROR]', e,
+                      '\033[33mRetrying get_json_cn:', retry_cnt, '\033[0m')
+            retry_cnt -= 1
+            time.sleep(random.uniform(0.5, 1))
 
     def download_img(self):
         """
@@ -190,6 +217,7 @@ class Crawler(object):
         # push copyright and description
         print('\033[33m[INFO] TG: Pushing copyright and description...\033[0m')
         text = self.date + '\n<b>' + self.replace_entities(self.data['copyright']) + \
+            '\n' + self.replace_entities(self.data['copyright_cn']) + \
             '</b>\n\n' + self.replace_entities(self.data['desc'])
         payload = {'chat_id': channel_id_archive,
                    'text': text, 'parse_mode': 'HTML'}
@@ -209,8 +237,8 @@ class Crawler(object):
             photo = self.data['url'].get('UHD')
         else:
             photo = self.data['url'].get('1920x1080')
-        caption = '<b>' + \
-            self.replace_entities(self.data['copyright']) + '</b>\n' + \
+        caption = '<b>' + self.replace_entities(self.data['copyright']) + '\n' + \
+            self.replace_entities(self.data['copyright_cn']) + '</b>\n' + \
             f'<a href="https://t.me/BingImageArchive/{str(tg_story_message_id)}">Story</a>'
 
         for i, v in enumerate(self.img_push_size_list):
@@ -250,6 +278,8 @@ class Crawler(object):
         self.get_json()
         print()
         self.parse_info()
+        print()
+        self.get_copyright_cn()
         print()
         self.download_img()
         print()
