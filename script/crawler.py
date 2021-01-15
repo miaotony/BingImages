@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210111
+@UpdateTime: 20210115
 """
 
 import os
@@ -148,6 +148,7 @@ class Crawler(object):
                     with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                         f.write(img_raw)
                     data_url[img_size] = url
+                    
                     if img_size == 'UHD':
                         # get image raw size
                         img = Image.open(BytesIO(img_raw))
@@ -155,6 +156,9 @@ class Crawler(object):
                         print(raw_size)
                         self.img_raw_size = raw_size
                         self.data['raw_size'] = raw_size
+                        # Save the latest image to `latest.jpg`
+                        with open(f'../img/latest.jpg', 'wb') as f:
+                            f.write(img_raw)
                     break
                 except Exception as e:
                     print('\033[31m[ERROR]', e,
