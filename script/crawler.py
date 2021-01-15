@@ -300,7 +300,7 @@ class Crawler(object):
         """
         print("\033[32m[INFO] Waiting for the specific execution time... \033[0m")
         d_time = datetime.datetime.strptime(
-            str(datetime.datetime.now().date()) + '16:02', '%Y-%m-%d%H:%M')
+            str(datetime.datetime.now().date()) + '16:01', '%Y-%m-%d%H:%M')
         print(d_time)
         while True:
             n_time = datetime.datetime.now()
