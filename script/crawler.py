@@ -156,8 +156,13 @@ class Crawler(object):
                         print(raw_size)
                         self.img_raw_size = raw_size
                         self.data['raw_size'] = raw_size
-                        # Save the latest image to `latest.jpg`
-                        with open(f'../img/latest.jpg', 'wb') as f:
+                        # Save the latest image to `UHD.jpg`
+                        with open(f'../img/latest/UHD.jpg', 'wb') as f:
+                            f.write(img_raw)
+
+                    if img_size == '1920x1080':
+                        # Save the latest image to `1080p.jpg`
+                        with open(f'../img/latest/1080p.jpg', 'wb') as f:
                             f.write(img_raw)
                     break
                 except Exception as e:
@@ -320,6 +325,8 @@ if __name__ == "__main__":
         os.mkdir("../data/")
     if not os.path.exists("../img/"):
         os.mkdir("../img/")
+    if not os.path.exists("../img/latest/"):
+        os.mkdir("../img/latest/")
 
     # Parse args
     parser = argparse.ArgumentParser()
