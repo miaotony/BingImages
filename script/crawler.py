@@ -268,6 +268,9 @@ class Crawler(object):
         with open(f'../data/{self.date}.json', 'w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False,
                       indent=2,  separators=(',', ': '))
+        with open(f'../data/latest.json', 'w', encoding='utf-8') as f:
+            json.dump(self.data, f, ensure_ascii=False,
+                      indent=2,  separators=(',', ': '))
 
     def run(self):
         """
