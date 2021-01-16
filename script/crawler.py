@@ -51,7 +51,6 @@ class Crawler(object):
         # images to be pushed and their names
         self.img_push_size_list = ['UHD', '1920x1080', '1080x1920']
         self.img_push_name_list = ['UHD', '1080p', 'Mobile']
-        self.date = datetime.datetime.now().strftime("%Y-%m-%d")
         self.data = {}
 
     def get_json(self, url: str):
@@ -271,6 +270,7 @@ class Crawler(object):
         run job
         """
         print("\033[32m[INFO] Job start! \033[0m")
+        self.date = datetime.datetime.now().strftime("%Y-%m-%d")
         time_start = time.time()
         self.get_info_cn()
         print()
