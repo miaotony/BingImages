@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210116
+@UpdateTime: 20210117
 """
 
 import os
@@ -291,13 +291,18 @@ class Crawler(object):
         run at a specific time
         """
         print("\033[32m[INFO] Waiting for the specific execution time... \033[0m")
-        d_time = datetime.datetime.strptime(
-            str(datetime.datetime.now().date()) + '00:00:30', '%Y-%m-%d%H:%M:%S')
-        print(d_time)
+        time_d = datetime.datetime.now()
+        hour = int(time_d.strftime("%H"))
+        if hour > 20:
+            time_d = time_d + datetime.timedelta(days=1)
+        # Run at 00:00:30
+        time_set = datetime.datetime.strptime(
+            str(time_d.date()) + '00:00:30', '%Y-%m-%d%H:%M:%S')
+        print('Set time:', time_set)
         while True:
-            n_time = datetime.datetime.now()
-            print(n_time)
-            if n_time >= d_time:
+            time_now = datetime.datetime.now()
+            print(time_now)
+            if time_now >= time_set:
                 break
             time.sleep(30)
         self.run()
@@ -321,7 +326,6 @@ if __name__ == "__main__":
     crawler = Crawler()
     time_now = datetime.datetime.now()
     print("\033[32m[INFO] time_now: ", time_now, '\033[0m')
-    date_str = datetime.datetime.now().strftime("%Y-%m-%d")
     if args.wait:
         crawler.wait_for_run()
     else:
