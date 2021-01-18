@@ -33,7 +33,7 @@ class Crawler(object):
         self.json_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp"
         self.json_en_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-US&pid=hp&ensearch=1"
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp&ensearch=1"
         self.json_en_au_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-AU&pid=hp&ensearch=1"
         self.json_en_in_url = self.host + \
