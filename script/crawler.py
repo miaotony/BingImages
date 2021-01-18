@@ -127,8 +127,13 @@ class Crawler(object):
             while retry_cnt > 0:
                 try:
                     url = self.urlbase + '_' + img_size + '.jpg'
-                    img_raw = requests.get(
-                        url, headers=self.headers, timeout=self.timeout).content
+                    resp = requests.get(
+                        url, headers=self.headers, timeout=self.timeout)
+                    if resp.status_code == 404:
+                        # If not exist, pass.
+                        break
+                    if 200 <= resp.status_code < 300:
+                        img_raw = resp.content
                     with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                         f.write(img_raw)
                     data_url[img_size] = url
