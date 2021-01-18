@@ -34,10 +34,10 @@ class Crawler(object):
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp"
         self.json_en_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp&ensearch=1"
-        self.json_en_au_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-AU&pid=hp&ensearch=1"
-        self.json_en_in_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-IN&pid=hp&ensearch=1"
+        # self.json_en_au_url = self.host + \
+        #     r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-AU&pid=hp&ensearch=1"
+        # self.json_en_in_url = self.host + \
+        #     r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-IN&pid=hp&ensearch=1"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
             "Accept": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -305,9 +305,9 @@ class Crawler(object):
         hour = int(time_d.strftime("%H"))
         if hour > 20:
             time_d = time_d + datetime.timedelta(days=1)
-        # Run at 00:00:30
+        # Run at 16:00:30
         time_set = datetime.datetime.strptime(
-            str(time_d.date()) + '00:00:30', '%Y-%m-%d%H:%M:%S')
+            str(time_d.date()) + '16:00:30', '%Y-%m-%d%H:%M:%S')
         print('Set time:', time_set)
         while True:
             time_now = datetime.datetime.now()
