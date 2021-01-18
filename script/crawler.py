@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210117
+@UpdateTime: 20210118
 """
 
 import os
@@ -33,7 +33,11 @@ class Crawler(object):
         self.json_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp"
         self.json_en_url = self.host + \
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-US&pid=hp&ensearch=1"
+        self.json_en_au_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-AU&pid=hp&ensearch=1"
+        self.json_en_in_url = self.host + \
+            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-IN&pid=hp&ensearch=1"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
             "Accept": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -102,6 +106,7 @@ class Crawler(object):
         """
         print('\033[32m[INFO] Getting and parsing info in English...\033[0m')
         data_raw = self.get_json(self.json_en_url)
+        # TODO: 截取文件名进行比较
         image = data_raw.get('images')[0]
         desc = image.get('desc', '')
         copyright_en = image.get('copyright')
@@ -134,26 +139,26 @@ class Crawler(object):
                         break
                     if 200 <= resp.status_code < 300:
                         img_raw = resp.content
-                    with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
-                        f.write(img_raw)
-                    data_url[img_size] = url
-
-                    if img_size == 'UHD':
-                        # get image raw size
-                        img = Image.open(BytesIO(img_raw))
-                        raw_size = f'{img.width}x{img.height}'
-                        print(raw_size)
-                        self.img_raw_size = raw_size
-                        self.data['raw_size'] = raw_size
-                        # Save the latest image to `UHD.jpg`
-                        with open(f'../img/latest/UHD.jpg', 'wb') as f:
+                        with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
                             f.write(img_raw)
+                        data_url[img_size] = url
 
-                    if img_size == '1920x1080':
-                        # Save the latest image to `1080p.jpg`
-                        with open(f'../img/latest/1080p.jpg', 'wb') as f:
-                            f.write(img_raw)
-                    break
+                        if img_size == 'UHD':
+                            # get image raw size
+                            img = Image.open(BytesIO(img_raw))
+                            raw_size = f'{img.width}x{img.height}'
+                            print(raw_size)
+                            self.img_raw_size = raw_size
+                            self.data['raw_size'] = raw_size
+                            # Save the latest image to `UHD.jpg`
+                            with open(f'../img/latest/UHD.jpg', 'wb') as f:
+                                f.write(img_raw)
+
+                        if img_size == '1920x1080':
+                            # Save the latest image to `1080p.jpg`
+                            with open(f'../img/latest/1080p.jpg', 'wb') as f:
+                                f.write(img_raw)
+                        break
                 except Exception as e:
                     print('\033[31m[ERROR]', e,
                           '\033[33mRetrying download_img:',  img_size, retry_cnt, '\033[0m')
