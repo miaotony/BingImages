@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210118
+@UpdateTime: 20210125
 """
 
 import os
@@ -236,10 +236,10 @@ class Crawler(object):
 
         # push image to main channel with links of the archive channel
         print('\033[33m[INFO] TG: Pushing the image to main channel...\033[0m')
-        if self.data['url'].get('UHD'):
-            photo = self.data['url'].get('UHD')
-        else:
+        if self.data['url'].get('1920x1080'):
             photo = self.data['url'].get('1920x1080')
+        else:
+            photo = self.data['url'].get('1366x768')
         caption = '<b>' + self.replace_entities(self.data['copyright']) + '\n' + \
             self.replace_entities(self.data['copyright_cn']) + '</b>\n' + \
             f'<a href="https://t.me/BingImageArchive/{str(tg_story_message_id)}">Story</a>'
