@@ -1,5 +1,7 @@
 # BingImages
 
+![GitHub Action status](https://github.com/miaotony/BingImages/workflows/Update%20Bing%20image/badge.svg?event=schedule)
+
 Bing Homepage Images / Image of the day / Wallpaper  
 
 必应首页壁纸爬取，基于 GitHub Action 实现 Telegram Channel 推送等  
