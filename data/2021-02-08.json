@@ -1,0 +1,80 @@
+{
+  "name": "OHR.IceWalking_ZH-CN5122217505",
+  "urlbase": "/th?id=OHR.IceWalking_ZH-CN5122217505",
+  "copyright_cn": "勃朗峰高山冰川上的徒步者，法国夏慕尼 (© agustavop/Getty Images)",
+  "copyrightlink": "/search?q=%e5%8b%83%e6%9c%97%e5%b3%b0&form=hpcapt&mkt=zh-cn",
+  "desc": "Chamonix is a winter sports resort town and one of the oldest ski resorts in France. As the highest European mountain west of Russia, Mont Blanc attracts mountain climbers. There is a cable car up to the 3,842 m (12,605 ft) Aiguille du Midi. Constructed in 1955, it was then the highest cable car in the world and remains the highest vertical ascent cable car in the world.",
+  "copyright": "Hikers on alpine glacier, Mont Blanc, Chamonix, France (© agustavop/Getty Images)",
+  "raw_size": "5694x3202",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.IceWalking_ZH-CN5122217505_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 420,
+        "file_id": "BQACAgQAAx0EUeHgWwACAaRgIO-kx5exxI1Fw2Ja8hzTHhNlTgACnwIAAlEyDVFVZmOgEMLIPB4E"
+      },
+      "1920x1080": {
+        "message_id": 421,
+        "file_id": "BQACAgQAAx0EUeHgWwACAaVgIO-ml1I-JQU3f6ZoPW0qaVEfEAACawIAArG_DVFoHn1lBu2SqR4E"
+      },
+      "1024x768": {
+        "message_id": 422,
+        "file_id": "BQACAgQAAx0EUeHgWwACAaZgIO-oWRId0jXTWbRQ5vonY9_GswACoQIAAsRlDFGX9mDAEkkuxR4E"
+      },
+      "1366x768": {
+        "message_id": 423,
+        "file_id": "BQACAgQAAx0EUeHgWwACAadgIO-qbn9q3D_pXgPaCNA4MG4z0gACswIAAg1iDFFX0GlcVwABn2IeBA"
+      },
+      "800x480": {
+        "message_id": 424,
+        "file_id": "BQACAgQAAx0EUeHgWwACAahgIO-rTRVoDcK2QS-N5he9Kyce8wAC1AIAAqYVDVFSJZs1Lhdz2B4E"
+      },
+      "1080x1920": {
+        "message_id": 425,
+        "file_id": "BQACAgQAAx0EUeHgWwACAalgIO-t1lGACHfae45jHMMTIfzwegACqAIAAva7DFHwDb2lRIsV1x4E"
+      },
+      "480x800": {
+        "message_id": 426,
+        "file_id": "BQACAgQAAx0EUeHgWwACAapgIO-u_TmPpx7ZzPEL1e38_TALlQACtwIAAjQ4DFH9r4mqiZYM9R4E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADPmAg76_Poec_h1QmUDGUeLjy5ECHAALWqzEbc-UMUQJeiaRkg5b8mwcgKl0AAwEAAwIAA20AA2doAgABHgQ",
+        "file_unique_id": "AQADmwcgKl0AA2doAgAB",
+        "file_size": 18417,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADPmAg76_Poec_h1QmUDGUeLjy5ECHAALWqzEbc-UMUQJeiaRkg5b8mwcgKl0AAwEAAwIAA3gAA2hoAgABHgQ",
+        "file_unique_id": "AQADmwcgKl0AA2hoAgAB",
+        "file_size": 109258,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADPmAg76_Poec_h1QmUDGUeLjy5ECHAALWqzEbc-UMUQJeiaRkg5b8mwcgKl0AAwEAAwIAA3kAA2loAgABHgQ",
+        "file_unique_id": "AQADmwcgKl0AA2loAgAB",
+        "file_size": 289409,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADPmAg76_Poec_h1QmUDGUeLjy5ECHAALWqzEbc-UMUQJeiaRkg5b8mwcgKl0AAwEAAwIAA3cAA2poAgABHgQ",
+        "file_unique_id": "AQADmwcgKl0AA2poAgAB",
+        "file_size": 340215,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
