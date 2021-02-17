@@ -1,0 +1,76 @@
+{
+  "name": "OHR.PeritoMorenoArgentina_ZH-CN8205335022",
+  "urlbase": "/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022",
+  "copyright_cn": "冰川国家公园中的佩里托莫雷诺冰川，阿根廷 (© Juergen Schonnop/Getty Images)",
+  "copyrightlink": "/search?q=%e4%bd%a9%e9%87%8c%e6%89%98%e8%8e%ab%e9%9b%b7%e8%af%ba%e5%86%b0%e5%b7%9d&form=hpcapt&mkt=zh-cn",
+  "desc": "Yes, it's true that glaciers are shrinking, but not all of them. Perito Moreno, a low-lying glacier in southern Argentina, accumulates ice at about the same rate that it melts into chilly Argentino Lake. This equilibrium makes it one of the few glaciers worldwide that aren't losing mass to climate change.",
+  "copyright": "Perito Moreno Glacier in Patagonia's Los Glaciares National Park, Argentina (© Juergen Schonnop/Getty Images)",
+  "raw_size": "6768x3807",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.PeritoMorenoArgentina_ZH-CN8205335022_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 503,
+        "file_id": "BQACAgQAAx0EUeHgWwACAfdgLTqHO6kchPeAUkZkBzlfep7ExQACewIAAiXjbFG05aVKjIXRqh4E"
+      },
+      "1920x1080": {
+        "message_id": 504,
+        "file_id": "BQACAgQAAx0EUeHgWwACAfhgLTqHYAXCxgnhkQWQqTjwqJIGPQACewIAAvaNbVFzY-KG4zSajh4E"
+      },
+      "1024x768": {
+        "message_id": 505,
+        "file_id": "BQACAgQAAx0EUeHgWwACAflgLTqIiMdQFJ0pjLUDEh7T-ehsTgACkgIAAv9pZFEFWxNpTSG7wB4E"
+      },
+      "800x480": {
+        "message_id": 506,
+        "file_id": "BQACAgQAAx0EUeHgWwACAfpgLTqJ8UfMk21KvuwzSQ2Q70yzOwACdgIAAhNcbFFWFwPNMNcvPx4E"
+      },
+      "1080x1920": {
+        "message_id": 507,
+        "file_id": "BQACAgQAAx0EUeHgWwACAftgLTqNBfuNUp7jtglatIOjPRZqmAACqAIAAgribFFA7ojFuFbXhx4E"
+      },
+      "480x800": {
+        "message_id": 508,
+        "file_id": "BQACAgQAAx0EUeHgWwACAfxgLTqO44bZ-m1I70zgG8Jd8PirZQACtgIAAsZ7bVH28EEtHmljNR4E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADR2AtOo_YMWge5kol7YXzT13G69E1AAK7qzEbHmltUXPEcwvFjnyflxUjKl0AAwEAAwIAA20AAzaeAgABHgQ",
+        "file_unique_id": "AQADlxUjKl0AAzaeAgAB",
+        "file_size": 18354,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADR2AtOo_YMWge5kol7YXzT13G69E1AAK7qzEbHmltUXPEcwvFjnyflxUjKl0AAwEAAwIAA3gAAzeeAgABHgQ",
+        "file_unique_id": "AQADlxUjKl0AAzeeAgAB",
+        "file_size": 94824,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADR2AtOo_YMWge5kol7YXzT13G69E1AAK7qzEbHmltUXPEcwvFjnyflxUjKl0AAwEAAwIAA3kAAzieAgABHgQ",
+        "file_unique_id": "AQADlxUjKl0AAzieAgAB",
+        "file_size": 235885,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgQAAx0ESGLKMAADR2AtOo_YMWge5kol7YXzT13G69E1AAK7qzEbHmltUXPEcwvFjnyflxUjKl0AAwEAAwIAA3cAAzmeAgABHgQ",
+        "file_unique_id": "AQADlxUjKl0AAzmeAgAB",
+        "file_size": 331627,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
