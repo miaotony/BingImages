@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210125
+@UpdateTime: 20210217
 """
 
 import os
@@ -208,12 +208,17 @@ class Crawler(object):
                                  timeout=self.timeout)
             resp.encoding = 'utf-8'
             print(resp.json())
-            result = resp.json().get('result')
-            message_id = result.get('message_id')
-            file_id = result.get('document').get('file_id')
-            tg_archive[photo_size] = {
-                'message_id': message_id, 'file_id': file_id}
-            print('----------')
+            isok = resp.json().get('ok')
+            if not isok:
+                error_description = resp.json().get('description')
+                print("\033[31m[ERROR]", error_description, "\033[0m")
+            else:
+                result = resp.json().get('result')
+                message_id = result.get('message_id')
+                file_id = result.get('document').get('file_id')
+                tg_archive[photo_size] = {
+                    'message_id': message_id, 'file_id': file_id}
+                print('----------')
         print('\033[33m=============\033[0m')
         print()
 
