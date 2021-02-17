@@ -9,7 +9,7 @@ Bing Homepage Images
 
 @Author: MiaoTony
 @CreateTime: 20201126
-@UpdateTime: 20210217
+@UpdateTime: 20210218
 """
 
 import os
@@ -119,7 +119,7 @@ class Crawler(object):
     def download_img(self):
         """
         Download the images to local, and return their urls.
-        return: {list} url dict 
+        return: {list} url dict
         """
         print('\033[32m[INFO] Downloading images...\033[0m')
         if not os.path.exists(f"../img/{self.date}/"):
@@ -170,7 +170,7 @@ class Crawler(object):
 
     def replace_entities(self, string: str):
         """
-        replace HTML entities `<`, `>`, `&` 
+        replace HTML entities `<`, `>`, `&`
         """
         return string.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
@@ -196,15 +196,19 @@ class Crawler(object):
         tg_archive = {}
         for photo_size in self.data['url']:
             print(photo_size)
-            photo_url = self.data['url'].get(photo_size)
             if photo_size == 'UHD':
                 caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{self.img_raw_size}</b>'
             else:
                 caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{photo_size}</b>'
-            payload = {'chat_id': channel_id_archive, 'document': photo_url,
-                       'caption': caption, 'parse_mode': 'HTML'}
-            # print(payload)
-            resp = requests.post(api_send_document, data=payload,
+            multipart_form_data = {
+                'chat_id': (None, channel_id_archive),
+                'document': (f'{self.name}_{photo_size}.jpg',
+                             open(f'../img/{self.date}/{self.name}_{photo_size}.jpg', 'rb')),
+                'caption': (None, caption),
+                'parse_mode': (None, 'HTML')
+            }
+            print(multipart_form_data)
+            resp = requests.post(api_send_document, files=multipart_form_data,
                                  timeout=self.timeout)
             resp.encoding = 'utf-8'
             print(resp.json())
@@ -218,7 +222,7 @@ class Crawler(object):
                 file_id = result.get('document').get('file_id')
                 tg_archive[photo_size] = {
                     'message_id': message_id, 'file_id': file_id}
-                print('----------')
+            print('----------')
         print('\033[33m=============\033[0m')
         print()
 
@@ -242,9 +246,9 @@ class Crawler(object):
         # push image to main channel with links of the archive channel
         print('\033[33m[INFO] TG: Pushing the image to main channel...\033[0m')
         if self.data['url'].get('1920x1080'):
-            photo = self.data['url'].get('1920x1080')
+            photo_size = '1920x1080'
         else:
-            photo = self.data['url'].get('1366x768')
+            photo_size = '1366x768'
         caption = '<b>' + self.replace_entities(self.data['copyright']) + '\n' + \
             self.replace_entities(self.data['copyright_cn']) + '</b>\n' + \
             f'<a href="https://t.me/BingImageArchive/{str(tg_story_message_id)}">Story</a>'
@@ -255,10 +259,16 @@ class Crawler(object):
                 display_name = self.img_push_name_list[i]
                 caption += ' | '
                 caption += f'<a href="https://t.me/BingImageArchive/{str(message_id)}">{display_name}</a>'
-        payload = {'chat_id': channel_id_main, 'photo': photo, 'caption': caption,
-                   'parse_mode': 'HTML', 'disable_web_page_preview': True}
-        print(payload)
-        resp = requests.post(api_send_photo, data=payload,
+        multipart_form_data = {
+            'chat_id': (None, channel_id_main),
+            'photo': (f'{self.name}_{photo_size}.jpg',
+                      open(f'../img/{self.date}/{self.name}_{photo_size}.jpg', 'rb')),
+            'caption': (None, caption),
+            'parse_mode': (None, 'HTML'),
+            'disable_web_page_preview': (None, True)
+        }
+        print(multipart_form_data)
+        resp = requests.post(api_send_photo, files=multipart_form_data,
                              timeout=self.timeout)
         resp.encoding = 'utf-8'
         print(resp.json())
