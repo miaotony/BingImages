@@ -1,0 +1,80 @@
+{
+  "name": "OHR.Trevi_ZH-CN9831666780",
+  "urlbase": "/th?id=OHR.Trevi_ZH-CN9831666780",
+  "copyright_cn": "俯瞰着特雷维的扁桃花，意大利佩鲁贾 (© Maurizio Rellini/eStock Photo)",
+  "copyrightlink": "/search?q=%e7%89%b9%e9%9b%b7%e7%bb%b4&form=hpcapt&mkt=zh-cn",
+  "desc": "Perched high above the lush Italian countryside is Trevi, a great medieval hill town. Trevi is considered one of the prettiest and most authentic of the medieval towns that dot the Umbria region. Counts and cardinals built these communities to show off their wealth and they built them up high to keep them safe from rivals.",
+  "copyright": "Almond blossoms overlooking Trevi, Perugia district, Umbria, Italy (© Maurizio Rellini/eStock Photo)",
+  "raw_size": "4910x2762",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.Trevi_ZH-CN9831666780_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 582,
+        "file_id": "BQACAgUAAx0EUeHgWwACAkZgN1k5mpjxcOjIRduQ3_K4tHhavAACQwIAAjiluFXXFTP41WyD5B4E"
+      },
+      "1920x1080": {
+        "message_id": 583,
+        "file_id": "BQACAgUAAx0EUeHgWwACAkdgN1k9iMh3VQABGvNk8d8oDzrLsVQAAkQCAAI4pbhVC4t3x5WZc6geBA"
+      },
+      "1024x768": {
+        "message_id": 584,
+        "file_id": "BQACAgUAAx0EUeHgWwACAkhgN1k-Y6nXCF9MLogad4_3M01yzQACRQIAAjiluFWMhr-DuW6SWB4E"
+      },
+      "1366x768": {
+        "message_id": 585,
+        "file_id": "BQACAgUAAx0EUeHgWwACAklgN1lAMKAs5sj7jveQZ663HkgkWQACRgIAAjiluFWl5MdQgXh-7B4E"
+      },
+      "800x480": {
+        "message_id": 586,
+        "file_id": "BQACAgUAAx0EUeHgWwACAkpgN1lBXemIbeHJNkASa0A-SiFaVQACRwIAAjiluFVPODFZkqUufh4E"
+      },
+      "1080x1920": {
+        "message_id": 587,
+        "file_id": "BQACAgUAAx0EUeHgWwACAktgN1lDU3sueRSBGGVuDq9G8iYD8QACSAIAAjiluFUmCbeut_Z5hR4E"
+      },
+      "480x800": {
+        "message_id": 588,
+        "file_id": "BQACAgUAAx0EUeHgWwACAkxgN1lE9y0Xo1fvSxtig6HJ4HZn0QACSQIAAjiluFUqrAsSnAFRtB4E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADUWA3WUd8THmQBHvWp2Dsf8xHVugIAAJerTEboAS4Vd5OlyhXYbIl_6kSb3QAAwEAAwIAA20AA-5pAgABHgQ",
+        "file_unique_id": "AQAD_6kSb3QAA-5pAgAB",
+        "file_size": 21684,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADUWA3WUd8THmQBHvWp2Dsf8xHVugIAAJerTEboAS4Vd5OlyhXYbIl_6kSb3QAAwEAAwIAA3gAA-9pAgABHgQ",
+        "file_unique_id": "AQAD_6kSb3QAA-9pAgAB",
+        "file_size": 105592,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADUWA3WUd8THmQBHvWp2Dsf8xHVugIAAJerTEboAS4Vd5OlyhXYbIl_6kSb3QAAwEAAwIAA3kAA_BpAgABHgQ",
+        "file_unique_id": "AQAD_6kSb3QAA_BpAgAB",
+        "file_size": 252940,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADUWA3WUd8THmQBHvWp2Dsf8xHVugIAAJerTEboAS4Vd5OlyhXYbIl_6kSb3QAAwEAAwIAA3cAA-xpAgABHgQ",
+        "file_unique_id": "AQAD_6kSb3QAA-xpAgAB",
+        "file_size": 342541,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
