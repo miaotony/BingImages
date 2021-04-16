@@ -1,0 +1,80 @@
+{
+  "name": "OHR.FlowerTown_ZH-CN6364330124",
+  "urlbase": "/th?id=OHR.FlowerTown_ZH-CN6364330124",
+  "copyright_cn": "Dinan镇的鹅卵石铺成的街道，法国布列塔尼 (© Scott Wilson/Alamy)",
+  "copyrightlink": "/search?q=Dinan%e9%95%87&form=hpcapt&mkt=zh-cn",
+  "desc": "The work of surrealist artist Salvador Dalí is the stuff of dreams: melting clocks, burning giraffes, weird objects suspended in midair. Gaze at a Dalí and you may find yourself gripped with a strange sense of familiarity, like your subconscious has visited these strange places before. But what if you could literally step into a huge Dalí piece?",
+  "copyright": "Dalí Theatre-Museum in Figueres, Spain (© Valerija Polakovska/Shutterstock)",
+  "raw_size": "5472x3078",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.FlowerTown_ZH-CN6364330124_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 992,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-BgeUQ3n7PwQLdkiP8qjQV66XQYNAAC0AEAAuYOyVe1K7Sx11B6sR8E"
+      },
+      "1920x1080": {
+        "message_id": 993,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-FgeUQ5LsvF37vsB-1OKyUgtfLbLQAC0QEAAuYOyVcJyMIpTVDGtR8E"
+      },
+      "1024x768": {
+        "message_id": 994,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-JgeUQ7tvkhnkJCIbVZBVxKD39E6gAC0gEAAuYOyVcgs1L06_ls8R8E"
+      },
+      "1366x768": {
+        "message_id": 995,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-NgeUQ81UCg5qSyt0PbUJJKVEpl7AAC0wEAAuYOyVfPXY8Jqr3NcR8E"
+      },
+      "800x480": {
+        "message_id": 996,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-RgeUQ9xgOnBE55c4VPJ6kKV-sUQAAC1AEAAuYOyVfcnrlc041t7B8E"
+      },
+      "1080x1920": {
+        "message_id": 997,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-VgeUQ_m6DtgMmJlcmbr9BzparxKAAC1QEAAuYOyVcJmHI_xBFD0R8E"
+      },
+      "480x800": {
+        "message_id": 998,
+        "file_id": "BQACAgUAAx0EUeHgWwACA-ZgeURA2lxx9pAUG84MvZXvEQJW4wAC1gEAAuYOyVed1TRGlS5E7B8E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADhGB5REKYa6bQ41WVvaCA0JHoD9piAAKRrDEbk-nIV9EoBEAj244ENC4xb3QAAwEAAwIAA20AAyDSAwABHwQ",
+        "file_unique_id": "AQADNC4xb3QAAyDSAwAB",
+        "file_size": 32861,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADhGB5REKYa6bQ41WVvaCA0JHoD9piAAKRrDEbk-nIV9EoBEAj244ENC4xb3QAAwEAAwIAA3gAAyHSAwABHwQ",
+        "file_unique_id": "AQADNC4xb3QAAyHSAwAB",
+        "file_size": 188233,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADhGB5REKYa6bQ41WVvaCA0JHoD9piAAKRrDEbk-nIV9EoBEAj244ENC4xb3QAAwEAAwIAA3cAAx7SAwABHwQ",
+        "file_unique_id": "AQADNC4xb3QAAx7SAwAB",
+        "file_size": 341933,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADhGB5REKYa6bQ41WVvaCA0JHoD9piAAKRrDEbk-nIV9EoBEAj244ENC4xb3QAAwEAAwIAA3kAAyLSAwABHwQ",
+        "file_unique_id": "AQADNC4xb3QAAyLSAwAB",
+        "file_size": 464991,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
