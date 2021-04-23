@@ -30,10 +30,11 @@ class Crawler(object):
 
     def __init__(self):
         self.host = r"https://www.bing.com"
-        self.json_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp"
+        self.cn_host = r"https://cn.bing.com"
+        self.json_cn_url = self.cn_host + \
+            r"/HPImageArchive.aspx?format=js&n=1&mkt=en-ww"
         self.json_en_url = self.host + \
-            r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp&ensearch=1"
+            r"/HPImageArchive.aspx?format=js&n=1&mkt=en-ww"
         # self.json_en_au_url = self.host + \
         #     r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=EN-AU&pid=hp&ensearch=1"
         # self.json_en_in_url = self.host + \
@@ -88,17 +89,9 @@ class Crawler(object):
         data_raw = self.get_json(self.json_url)
         image = data_raw.get('images')[0]
         # url = image.get('url')
-        urlbase = image.get('urlbase')
         copyright_cn = image.get('copyright')
-        copyrightlink = image.get('copyrightlink')
-        name = urlbase.split('=')[1]
-        print(urlbase, copyright_cn)
-        self.name = name
-        self.urlbase = self.host + urlbase
-        self.data['name'] = name
-        self.data['urlbase'] = urlbase
+        print(copyright_cn)
         self.data['copyright_cn'] = copyright_cn
-        self.data['copyrightlink'] = copyrightlink
 
     def get_info_en(self):
         """
@@ -108,12 +101,18 @@ class Crawler(object):
         data_raw = self.get_json(self.json_en_url)
         # TODO: 截取文件名进行比较
         image = data_raw.get('images')[0]
-        desc = image.get('desc', '')
+        urlbase = image.get('urlbase')
         copyright_en = image.get('copyright')
-        print(copyright_en)
+        copyrightlink = image.get('copyrightlink')
+        name = urlbase.split('=')[1]
+        print(urlbase, copyright_en)
         print()
-        self.data['desc'] = desc
+        self.name = name
+        self.urlbase = self.host + urlbase
+        self.data['name'] = name
+        self.data['urlbase'] = urlbase
         self.data['copyright'] = copyright_en
+        self.data['copyrightlink'] = copyrightlink
         print(self.data)
 
     def download_img(self):
@@ -229,8 +228,7 @@ class Crawler(object):
         # push copyright and description
         print('\033[33m[INFO] TG: Pushing copyright and description...\033[0m')
         text = self.date + '\n<b>' + self.replace_entities(self.data['copyright']) + \
-            '\n' + self.replace_entities(self.data['copyright_cn']) + \
-            '</b>\n\n' + self.replace_entities(self.data['desc'])
+            '\n' + self.replace_entities(self.data['copyright_cn'])
         payload = {'chat_id': channel_id_archive,
                    'text': text, 'parse_mode': 'HTML'}
         # print(payload)
