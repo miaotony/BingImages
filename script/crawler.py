@@ -86,7 +86,7 @@ class Crawler(object):
         Get and parse the JSON data in Chinese.
         """
         print('\033[32m[INFO] Getting and parsing info in Chinese...\033[0m')
-        data_raw = self.get_json(self.json_url)
+        data_raw = self.get_json(self.json_cn_url)
         image = data_raw.get('images')[0]
         # url = image.get('url')
         copyright_cn = image.get('copyright')
