@@ -1,0 +1,80 @@
+{
+  "name": "OHR.MaineWetland_ZH-CN7884780461",
+  "urlbase": "/th?id=OHR.MaineWetland_ZH-CN7884780461",
+  "copyright_cn": "穆斯黑德湖附近的Norcross Brook河与湿地，缅因州皮斯卡特奎斯 (© Aaron Black-Schmidt/Tandem Stills + Motion)",
+  "copyrightlink": "/search?q=%e7%a9%86%e6%96%af%e9%bb%91%e5%be%b7%e6%b9%96&form=hpcapt&mkt=zh-cn",
+  "desc": "To celebrate American Wetlands Month, we're flying over Norcross Brook, which snakes through the wetlands of Maine's North Woods near Moosehead Lake. Wetlands like these are an often-underappreciated natural resource. They act as vital link between land and our planet's watersheds, playing a crucial role in protecting healthy ecosystems. In addition to providing indispensable habitat for the many species that call them home, wetlands filter our drinking water and cycle nutrients. They also provide a natural buffer from storms, absorb flood waters, and capture carbon from the atmosphere—all of which help to mitigate the impact of climate change.",
+  "copyright": "Norcross Brook and wetlands near Moosehead Lake in Piscataquis County, Maine (© Aaron Black-Schmidt/Tandem Stills + Motion)",
+  "raw_size": "4771x2684",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.MaineWetland_ZH-CN7884780461_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 1160,
+        "file_id": "BQACAgUAAx0EUeHgWwACBIhglPOteBGlkwPn8-qlI0YY6ZhPCwAC1QIAAqbuqFTR6WD4Z687Jx8E"
+      },
+      "1920x1080": {
+        "message_id": 1161,
+        "file_id": "BQACAgUAAx0EUeHgWwACBIlglPOwagJy0nt75YfIsqBMITkI6AAC1gIAAqbuqFQ4-ZfM9akl5h8E"
+      },
+      "1024x768": {
+        "message_id": 1162,
+        "file_id": "BQACAgUAAx0EUeHgWwACBIpglPOx9f3Fjy1pj6UmakpwIUoZXAAC1wIAAqbuqFSKChgsjie4jx8E"
+      },
+      "1366x768": {
+        "message_id": 1163,
+        "file_id": "BQACAgUAAx0EUeHgWwACBItglPOzFSvPAjwOU4IRn65Hd_BJpwAC2AIAAqbuqFSv29K37RGiFh8E"
+      },
+      "800x480": {
+        "message_id": 1164,
+        "file_id": "BQACAgUAAx0EUeHgWwACBIxglPO1M-1F4U5f8UmZu_OwTfcfZQAC2QIAAqbuqFRc38Uw6m4S3h8E"
+      },
+      "1080x1920": {
+        "message_id": 1165,
+        "file_id": "BQACAgUAAx0EUeHgWwACBI1glPO3gUSA_Tc6Gm1nLGs_fg4jbQAC2gIAAqbuqFR0zJvhc5lJMx8E"
+      },
+      "480x800": {
+        "message_id": 1166,
+        "file_id": "BQACAgUAAx0EUeHgWwACBI5glPO4bLGw9bIAAbAWtuCU98crtWgAAtsCAAKm7qhUbkpDW2WjqMIfBA"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADmWCU87uvpi1YsXeDoog5GinvjwO3AAINrDEbzwuhVBK6t5e65UfXplSmbnQAAwEAAwIAA20AAxt4BAABHwQ",
+        "file_unique_id": "AQADplSmbnQAAxt4BAAB",
+        "file_size": 28321,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADmWCU87uvpi1YsXeDoog5GinvjwO3AAINrDEbzwuhVBK6t5e65UfXplSmbnQAAwEAAwIAA3gAAxp4BAABHwQ",
+        "file_unique_id": "AQADplSmbnQAAxp4BAAB",
+        "file_size": 162044,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADmWCU87uvpi1YsXeDoog5GinvjwO3AAINrDEbzwuhVBK6t5e65UfXplSmbnQAAwEAAwIAA3cAAxh4BAABHwQ",
+        "file_unique_id": "AQADplSmbnQAAxh4BAAB",
+        "file_size": 328793,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAADmWCU87uvpi1YsXeDoog5GinvjwO3AAINrDEbzwuhVBK6t5e65UfXplSmbnQAAwEAAwIAA3kAAxl4BAABHwQ",
+        "file_unique_id": "AQADplSmbnQAAxl4BAAB",
+        "file_size": 386039,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
