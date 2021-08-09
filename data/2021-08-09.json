@@ -1,0 +1,87 @@
+{
+  "name": "OHR.MineBay_ZH-CN4962056960",
+  "urlbase": "/th?id=OHR.MineBay_ZH-CN4962056960",
+  "copyright_cn": "雕刻师在矿山湾创作的岩雕作品，新西兰北岛陶波湖 (© Evgueni Zverev/Alamy)",
+  "copyrightlink": "/search?q=%e9%99%b6%e6%b3%a2%e6%b9%96&form=hpcapt&mkt=zh-cn",
+  "desc": "To celebrate International Day of the World's Indigenous Peoples, we're on New Zealand's North Island, looking at the Ngatoroirangi rock carving in Mine Bay, by Māori artist Matahi Whakataka-Brightwell. This artwork is part of a larger collection of carvings on the edge of Lake Taupo and has become a big tourist attraction despite being accessible only by boat. Four years in the making, the work is a tribute to Māori ancestors and guardians, and the integral roles they play in the Indigenous Māori culture.",
+  "copyright": "The Mine Bay Māori Rock Carving of Ngatoroirangi by Matahi Whakataka-Brightwell on the edge of Lake Taupo, North Island, New Zealand (© Evgueni Zverev/Alamy)",
+  "raw_size": "5920x3330",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.MineBay_ZH-CN4962056960_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 1905,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3FhEOCqZHDexF7e0dEJ8kDKEEfnIwACQgMAAhBjiVSPIDiR1TTAFCAE"
+      },
+      "1920x1080": {
+        "message_id": 1906,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3JhEOCtzsnGll3eZ74JHJkCjpLTwAACQwMAAhBjiVQoA3o7U4Zj5iAE"
+      },
+      "1024x768": {
+        "message_id": 1907,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3NhEOCviQebHTIke8ZJXLKGxXfJPQACRAMAAhBjiVS2Fci259UR1SAE"
+      },
+      "1366x768": {
+        "message_id": 1908,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3RhEOCxCqjWylf3Xw2mXRKbPFCvgQACRQMAAhBjiVR-GwGU43hBaCAE"
+      },
+      "800x480": {
+        "message_id": 1909,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3VhEOCzKqAZvjixg9fnwZGLOZuR3QACRgMAAhBjiVSP8pXUuosIziAE"
+      },
+      "1080x1920": {
+        "message_id": 1910,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3ZhEOC1MF6sNCqBa4y1j0oRVatunAACRwMAAhBjiVRmHAgcDQwNFiAE"
+      },
+      "480x800": {
+        "message_id": 1911,
+        "file_id": "BQACAgUAAx0EUeHgWwACB3dhEOC3kGZb8FjLsuPJ_BU-x924twACSAMAAhBjiVTa_toRA1HQoyAE"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAAD9mEQ4Lmh0dsrStuNZeGg2ui0Vp4SAAIyrTEbOvOJVAgNygABvvz5KQEAAwIAA3MAAyAE",
+        "file_unique_id": "AQADMq0xGzrziVR4",
+        "file_size": 1287,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAAD9mEQ4Lmh0dsrStuNZeGg2ui0Vp4SAAIyrTEbOvOJVAgNygABvvz5KQEAAwIAA20AAyAE",
+        "file_unique_id": "AQADMq0xGzrziVRy",
+        "file_size": 22765,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAAD9mEQ4Lmh0dsrStuNZeGg2ui0Vp4SAAIyrTEbOvOJVAgNygABvvz5KQEAAwIAA3gAAyAE",
+        "file_unique_id": "AQADMq0xGzrziVR9",
+        "file_size": 119023,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAAD9mEQ4Lmh0dsrStuNZeGg2ui0Vp4SAAIyrTEbOvOJVAgNygABvvz5KQEAAwIAA3kAAyAE",
+        "file_unique_id": "AQADMq0xGzrziVR-",
+        "file_size": 293256,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAAD9mEQ4Lmh0dsrStuNZeGg2ui0Vp4SAAIyrTEbOvOJVAgNygABvvz5KQEAAwIAA3cAAyAE",
+        "file_unique_id": "AQADMq0xGzrziVR8",
+        "file_size": 344050,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
