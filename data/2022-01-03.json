@@ -1,0 +1,87 @@
+{
+  "name": "OHR.LickObservatory_ZH-CN9676762110",
+  "urlbase": "/th?id=OHR.LickObservatory_ZH-CN9676762110",
+  "copyright_cn": "汉密尔顿山顶的利克天文台，美国加利福尼亚州 (© Jeffrey Lewis/Tandem Stills + Motion)",
+  "copyrightlink": "/search?q=%e5%88%a9%e5%85%8b%e5%a4%a9%e6%96%87%e5%8f%b0&form=hpcapt&mkt=zh-cn",
+  "desc": "Shrouded in snow on the summit of Mount Hamilton, in the Diablo Range just east of San Jose, California, lies the world's first permanently occupied mountaintop observatory. Constructed between 1876 and 1887, the Lick Observatory has been the site of significant discoveries including several of Jupiter's moons and other planetary systems. It's named for American real-estate entrepreneur James Lick, who set aside $700,000 for the University of California to build a facility that would be home to a 'telescope superior to and more powerful than any telescope yet made.'",
+  "copyright": "The Lick Observatory on Mount Hamilton, near San Jose, California (© Jeffrey Lewis/Tandem Stills + Motion)",
+  "raw_size": "7188x4043",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.LickObservatory_ZH-CN9676762110_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 3083,
+        "file_id": "BQACAgUAAx0EUeHgWwACDAth0q0pQd3N38aqExvC85p8hp_STQAC7AQAAmmKmFZ0-jjL_5gtSiME"
+      },
+      "1920x1080": {
+        "message_id": 3084,
+        "file_id": "BQACAgUAAx0EUeHgWwACDAxh0q0sCy4sjLIXTFSB1vI6duSLlwAC7QQAAmmKmFbOKb7bPxVCGiME"
+      },
+      "1024x768": {
+        "message_id": 3085,
+        "file_id": "BQACAgUAAx0EUeHgWwACDA1h0q0tE3SG0CPeA6udRuKgSHwXfAAC7gQAAmmKmFaJ_fwFi0A4wiME"
+      },
+      "1366x768": {
+        "message_id": 3086,
+        "file_id": "BQACAgUAAx0EUeHgWwACDA5h0q0va7ezXSZ9T31wvwIO3Zw4-AAC7wQAAmmKmFaUtS4oTvCDUyME"
+      },
+      "800x480": {
+        "message_id": 3087,
+        "file_id": "BQACAgUAAx0EUeHgWwACDA9h0q0wxS1TYhO3nZgcS-gD6Gr2QQAC8AQAAmmKmFbuNTPfK4TWkyME"
+      },
+      "1080x1920": {
+        "message_id": 3088,
+        "file_id": "BQACAgUAAx0EUeHgWwACDBBh0q0yUGRtjbYKgP-Ft--X6hw-VAAC8QQAAmmKmFZj_zvXLynomyME"
+      },
+      "480x800": {
+        "message_id": 3089,
+        "file_id": "BQACAgUAAx0EUeHgWwACDBFh0q0026KDXOiC4xrh-HZc5aFhvgAC8gQAAmmKmFaA_V_noxwNHSME"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACAYlh0q036z4THizeQxWi7dffYDVlUQACF60xGwL9mVbFBwFbuOxE-AEAAwIAA3MAAyME",
+        "file_unique_id": "AQADF60xGwL9mVZ4",
+        "file_size": 1311,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACAYlh0q036z4THizeQxWi7dffYDVlUQACF60xGwL9mVbFBwFbuOxE-AEAAwIAA20AAyME",
+        "file_unique_id": "AQADF60xGwL9mVZy",
+        "file_size": 24407,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACAYlh0q036z4THizeQxWi7dffYDVlUQACF60xGwL9mVbFBwFbuOxE-AEAAwIAA3gAAyME",
+        "file_unique_id": "AQADF60xGwL9mVZ9",
+        "file_size": 136967,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACAYlh0q036z4THizeQxWi7dffYDVlUQACF60xGwL9mVbFBwFbuOxE-AEAAwIAA3cAAyME",
+        "file_unique_id": "AQADF60xGwL9mVZ8",
+        "file_size": 343437,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACAYlh0q036z4THizeQxWi7dffYDVlUQACF60xGwL9mVbFBwFbuOxE-AEAAwIAA3kAAyME",
+        "file_unique_id": "AQADF60xGwL9mVZ-",
+        "file_size": 347040,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
