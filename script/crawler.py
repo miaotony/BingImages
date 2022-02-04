@@ -48,7 +48,7 @@ class Crawler(object):
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
         }
-        self.timeout = 12  # seconds
+        self.timeout = 60  # seconds
         self.img_size_list = ['UHD', '1920x1080', '1024x768', '1366x768', '800x480',
                               # Mobile
                               '1080x1920', '480x800']
