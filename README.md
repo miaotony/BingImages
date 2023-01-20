@@ -58,4 +58,4 @@ Non-commercial use!
 最终解释权归本项目开发者所有。  
 The final interpretation right belongs to the developer of the project.  
 
-Copyright © 2020-2022 [MiaoTony](https://github.com/miaotony).  
+Copyright © 2020-2023 [MiaoTony](https://github.com/miaotony).  
