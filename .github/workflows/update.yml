@@ -13,6 +13,9 @@ on:
     # 15:00 every day Asia/Shanghai
     - cron: "0 7 * * *"
 
+permissions:
+  contents: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -23,18 +26,20 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v6
         with:
-          python-version: 3.8
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: script/requirements.txt
 
       - name: Install dependencies
         run: |
           cd script
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
       
       - name: Echo the event name
         run: |
@@ -71,12 +76,11 @@ jobs:
           mv img archive
       
       - name: Push archives
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GIT_CONFIG_NAME: Bing Image Bot
-          GIT_CONFIG_EMAIL: action@github.com
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: archive # The branch the action should deploy to.
-          FOLDER: archive # The folder the action should deploy.
-          CLEAN: false # Don't automatically remove deleted files from the deploy branch.
-          COMMIT_MESSAGE: Update Bing images.
+          git-config-name: Bing Image Bot
+          git-config-email: action@github.com
+          branch: archive # The branch the action should deploy to.
+          folder: archive # The folder the action should deploy.
+          clean: false # Don't automatically remove deleted files from the deploy branch.
+          commit-message: Update Bing images.
