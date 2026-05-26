@@ -13,14 +13,17 @@ Bing Homepage Images
 """
 
 import os
-import requests
 import json
 import time
 import random
 import datetime
 import argparse
+import re
+from html import escape
+from pathlib import Path
 from PIL import Image
 from io import BytesIO
+import requests
 
 
 class Crawler(object):
@@ -29,6 +32,10 @@ class Crawler(object):
     """
 
     def __init__(self):
+        self.base_dir = Path(__file__).resolve().parent.parent
+        self.data_dir = self.base_dir / 'data'
+        self.img_dir = self.base_dir / 'img'
+        self.latest_img_dir = self.img_dir / 'latest'
         self.host = r"https://www.bing.com"
         self.json_url = self.host + \
             r"/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=ZH-CN&pid=hp"
@@ -57,6 +64,13 @@ class Crawler(object):
         self.img_push_name_list = ['UHD', '1080p', 'Mobile']
         self.data = {}
 
+    def sanitize_filename(self, value: str):
+        """
+        Sanitize externally sourced file names before writing to disk.
+        """
+        filename = re.sub(r'[^A-Za-z0-9._-]+', '_', value or '').strip('._')
+        return filename or 'bing_image'
+
     def get_json(self, url: str):
         """
         Get the data with JSON format from the Bing API.
@@ -70,6 +84,7 @@ class Crawler(object):
                 resp = requests.get(
                     url, headers=self.headers, timeout=self.timeout)
                 resp.encoding = 'utf-8'
+                resp.raise_for_status()
                 data = resp.json()
                 print(data)
                 if data:
@@ -86,6 +101,8 @@ class Crawler(object):
         """
         print('\033[32m[INFO] Getting and parsing info in Chinese...\033[0m')
         data_raw = self.get_json(self.json_url)
+        if not data_raw or not data_raw.get('images'):
+            raise RuntimeError('Failed to fetch Chinese image metadata from Bing API.')
         image = data_raw.get('images')[0]
         # url = image.get('url')
         urlbase = image.get('urlbase')
@@ -93,9 +110,9 @@ class Crawler(object):
         copyrightlink = image.get('copyrightlink')
         name = urlbase.split('=')[1]
         print(urlbase, copyright_cn)
-        self.name = name
+        self.name = self.sanitize_filename(name)
         self.urlbase = self.host + urlbase
-        self.data['name'] = name
+        self.data['name'] = self.name
         self.data['urlbase'] = urlbase
         self.data['copyright_cn'] = copyright_cn
         self.data['copyrightlink'] = copyrightlink
@@ -106,6 +123,8 @@ class Crawler(object):
         """
         print('\033[32m[INFO] Getting and parsing info in English...\033[0m')
         data_raw = self.get_json(self.json_en_url)
+        if not data_raw or not data_raw.get('images'):
+            raise RuntimeError('Failed to fetch English image metadata from Bing API.')
         # TODO: 截取文件名进行比较
         image = data_raw.get('images')[0]
         desc = image.get('desc', '')
@@ -122,8 +141,8 @@ class Crawler(object):
         return: {list} url dict
         """
         print('\033[32m[INFO] Downloading images...\033[0m')
-        if not os.path.exists(f"../img/{self.date}/"):
-            os.mkdir(f"../img/{self.date}/")
+        date_img_dir = self.img_dir / self.date
+        date_img_dir.mkdir(parents=True, exist_ok=True)
 
         data_url = {}
         for img_size in self.img_size_list:
@@ -139,7 +158,7 @@ class Crawler(object):
                         break
                     if 200 <= resp.status_code < 300:
                         img_raw = resp.content
-                        with open(f'../img/{self.date}/{self.name}_{img_size}.jpg', 'wb') as f:
+                        with (date_img_dir / f'{self.name}_{img_size}.jpg').open('wb') as f:
                             f.write(img_raw)
                         data_url[img_size] = url
 
@@ -151,12 +170,12 @@ class Crawler(object):
                             self.img_raw_size = raw_size
                             self.data['raw_size'] = raw_size
                             # Save the latest image to `UHD.jpg`
-                            with open(f'../img/latest/UHD.jpg', 'wb') as f:
+                            with (self.latest_img_dir / 'UHD.jpg').open('wb') as f:
                                 f.write(img_raw)
 
                         if img_size == '1920x1080':
                             # Save the latest image to `1080p.jpg`
-                            with open(f'../img/latest/1080p.jpg', 'wb') as f:
+                            with (self.latest_img_dir / '1080p.jpg').open('wb') as f:
                                 f.write(img_raw)
                         break
                 except Exception as e:
@@ -172,7 +191,7 @@ class Crawler(object):
         """
         replace HTML entities `<`, `>`, `&`
         """
-        return string.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        return escape(string or '')
 
     def telegram_push(self):
         """
@@ -200,16 +219,17 @@ class Crawler(object):
                 caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{self.img_raw_size}</b>'
             else:
                 caption = f'#{photo_size}\n{self.date}\n<b>{self.name}_{photo_size}</b>'
-            multipart_form_data = {
-                'chat_id': (None, channel_id_archive),
-                'document': (f'{self.name}_{photo_size}.jpg',
-                             open(f'../img/{self.date}/{self.name}_{photo_size}.jpg', 'rb')),
-                'caption': (None, caption),
-                'parse_mode': (None, 'HTML')
-            }
-            print(multipart_form_data)
-            resp = requests.post(api_send_document, files=multipart_form_data,
-                                 timeout=self.timeout)
+            file_path = self.img_dir / self.date / f'{self.name}_{photo_size}.jpg'
+            with file_path.open('rb') as image_file:
+                multipart_form_data = {
+                    'chat_id': (None, channel_id_archive),
+                    'document': (f'{self.name}_{photo_size}.jpg', image_file),
+                    'caption': (None, caption),
+                    'parse_mode': (None, 'HTML')
+                }
+                print(multipart_form_data)
+                resp = requests.post(api_send_document, files=multipart_form_data,
+                                     timeout=self.timeout)
             resp.encoding = 'utf-8'
             print(resp.json())
             isok = resp.json().get('ok')
@@ -259,17 +279,18 @@ class Crawler(object):
                 display_name = self.img_push_name_list[i]
                 caption += ' | '
                 caption += f'<a href="https://t.me/BingImageArchive/{str(message_id)}">{display_name}</a>'
-        multipart_form_data = {
-            'chat_id': (None, channel_id_main),
-            'photo': (f'{self.name}_{photo_size}.jpg',
-                      open(f'../img/{self.date}/{self.name}_{photo_size}.jpg', 'rb')),
-            'caption': (None, caption),
-            'parse_mode': (None, 'HTML'),
-            'disable_web_page_preview': (None, True)
-        }
-        print(multipart_form_data)
-        resp = requests.post(api_send_photo, files=multipart_form_data,
-                             timeout=self.timeout)
+        file_path = self.img_dir / self.date / f'{self.name}_{photo_size}.jpg'
+        with file_path.open('rb') as image_file:
+            multipart_form_data = {
+                'chat_id': (None, channel_id_main),
+                'photo': (f'{self.name}_{photo_size}.jpg', image_file),
+                'caption': (None, caption),
+                'parse_mode': (None, 'HTML'),
+                'disable_web_page_preview': (None, True)
+            }
+            print(multipart_form_data)
+            resp = requests.post(api_send_photo, files=multipart_form_data,
+                                 timeout=self.timeout)
         resp.encoding = 'utf-8'
         print(resp.json())
         result = resp.json().get('result')
@@ -283,10 +304,10 @@ class Crawler(object):
         Save all data to local.
         """
         print('\033[32m[INFO] Saving data...\033[0m')
-        with open(f'../data/{self.date}.json', 'w', encoding='utf-8') as f:
+        with (self.data_dir / f'{self.date}.json').open('w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False,
                       indent=2,  separators=(',', ': '))
-        with open(f'../data/latest.json', 'w', encoding='utf-8') as f:
+        with (self.data_dir / 'latest.json').open('w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False,
                       indent=2,  separators=(',', ': '))
 
@@ -334,12 +355,9 @@ class Crawler(object):
 
 
 if __name__ == "__main__":
-    if not os.path.exists("../data/"):
-        os.mkdir("../data/")
-    if not os.path.exists("../img/"):
-        os.mkdir("../img/")
-    if not os.path.exists("../img/latest/"):
-        os.mkdir("../img/latest/")
+    base_dir = Path(__file__).resolve().parent.parent
+    (base_dir / 'data').mkdir(parents=True, exist_ok=True)
+    (base_dir / 'img' / 'latest').mkdir(parents=True, exist_ok=True)
 
     # Parse args
     parser = argparse.ArgumentParser()
