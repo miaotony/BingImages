@@ -189,7 +189,7 @@ class Crawler(object):
 
     def replace_entities(self, string: str):
         """
-        replace HTML entities `<`, `>`, `&`
+        Escape text for Telegram HTML parse mode.
         """
         return escape(string or '')
 
