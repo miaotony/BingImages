@@ -1,0 +1,87 @@
+{
+  "name": "OHR.AmmoniteFossils_ZH-CN5825251327",
+  "urlbase": "/th?id=OHR.AmmoniteFossils_ZH-CN5825251327",
+  "copyright_cn": "侏罗纪时期的菊石化石 (© J Nemchinova/Getty Images)",
+  "copyrightlink": "/search?q=%e5%9b%bd%e5%ae%b6%e5%8c%96%e7%9f%b3%e6%97%a5&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Ammonite fossils from the Jurassic Period (© J Nemchinova/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.AmmoniteFossils_ZH-CN5825251327_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 16914,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhJqz3Z8O3DXnaY-Jkb25OcglJNSxwACySIAAgg-gFYnt4A3h9_pOj0E"
+      },
+      "1920x1080": {
+        "message_id": 16915,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhNqz3Z-VCA5003Si-KHkfE3r62R-AACyiIAAgg-gFaiOM4qGRfowT0E"
+      },
+      "1024x768": {
+        "message_id": 16916,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhRqz3Z_rMYfcNCdOp4W50WtkXSr3gACyyIAAgg-gFYWZW_hObLEpz0E"
+      },
+      "1366x768": {
+        "message_id": 16917,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhVqz3aALRvDTw334mcWyGytUd2oTgACzCIAAgg-gFbJfyM7UEvARD0E"
+      },
+      "800x480": {
+        "message_id": 16918,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhZqz3aBMkzaEv2mRtq3ek1A6vxykQACzSIAAgg-gFZH2RP-Ytm4cD0E"
+      },
+      "1080x1920": {
+        "message_id": 16919,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhdqz3aCN89z-nWsjURq7rcDnbNHAgACziIAAgg-gFbGeVBU9sH3xD0E"
+      },
+      "480x800": {
+        "message_id": 16920,
+        "file_id": "BQACAgUAAx0EUeHgWwACQhhqz3aEflYdiaHfdfubw1WB6BhNUAACzyIAAgg-gFau_ddoRqNqhD0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCEhqz3aFyRhkm5uHbcFDgth0oTg-CAACkBFrGwQ0gVYbzwYsUtw__gEAAwIAA3MAAz0E",
+        "file_unique_id": "AQADkBFrGwQ0gVZ4",
+        "file_size": 1402,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCEhqz3aFyRhkm5uHbcFDgth0oTg-CAACkBFrGwQ0gVYbzwYsUtw__gEAAwIAA20AAz0E",
+        "file_unique_id": "AQADkBFrGwQ0gVZy",
+        "file_size": 30315,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCEhqz3aFyRhkm5uHbcFDgth0oTg-CAACkBFrGwQ0gVYbzwYsUtw__gEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADkBFrGwQ0gVZ9",
+        "file_size": 184175,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCEhqz3aFyRhkm5uHbcFDgth0oTg-CAACkBFrGwQ0gVYbzwYsUtw__gEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADkBFrGwQ0gVZ8",
+        "file_size": 339974,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCEhqz3aFyRhkm5uHbcFDgth0oTg-CAACkBFrGwQ0gVYbzwYsUtw__gEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADkBFrGwQ0gVZ-",
+        "file_size": 459351,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
