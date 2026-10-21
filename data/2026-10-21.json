@@ -1,0 +1,87 @@
+{
+  "name": "OHR.VietnamBridge_ZH-CN6134321119",
+  "urlbase": "/th?id=OHR.VietnamBridge_ZH-CN6134321119",
+  "copyright_cn": "香江上的阮潢桥，顺化，越南 (© VU PHAM VAN/Getty Images)",
+  "copyrightlink": "/search?q=%e8%b6%8a%e5%8d%97%e9%a1%ba%e5%8c%96%e5%b8%82&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Nguyen Hoang Bridge over the Perfume River, Hue, Vietnam (© VU PHAM VAN/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.VietnamBridge_ZH-CN6134321119_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 16962,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkJq2LEw_mpzY1Wcwof0RmA-72lXOQACIysAAvTWwFaiI3oxhlYQaj0E"
+      },
+      "1920x1080": {
+        "message_id": 16963,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkNq2LExz9LFTZyO_w6ZU3kDBh1-mQACJCsAAvTWwFaZHZNjnHMAAWY9BA"
+      },
+      "1024x768": {
+        "message_id": 16964,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkRq2LEzL34bJqmZtFUzf8Cc6jkoTgACJSsAAvTWwFZQnR_z2KwQdz0E"
+      },
+      "1366x768": {
+        "message_id": 16965,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkVq2LE0jGWLkAk0PCYgtW-HKO_gtgACJisAAvTWwFYk7a8yDH1nHD0E"
+      },
+      "800x480": {
+        "message_id": 16966,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkZq2LE1sfBb3aTkxyz2h_5IImUS1AACJysAAvTWwFazsYD7ZEMTJj0E"
+      },
+      "1080x1920": {
+        "message_id": 16967,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkdq2LE3H6gQX0MK2nTnCkncjeddHwACKCsAAvTWwFaVcJfAJ-jNRD0E"
+      },
+      "480x800": {
+        "message_id": 16968,
+        "file_id": "BQACAgUAAx0EUeHgWwACQkhq2LE482i9drM65OboC1PsHsHc_AACKSsAAvTWwFYoK4Gw8rovfT0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCE5q2LE7cTo8MAN2sJ20CQ_aXTphvwADEWsbYNTJVrDu53TMjWJaAQADAgADcwADPQQ",
+        "file_unique_id": "AQAEEWsbYNTJVng",
+        "file_size": 1303,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCE5q2LE7cTo8MAN2sJ20CQ_aXTphvwADEWsbYNTJVrDu53TMjWJaAQADAgADbQADPQQ",
+        "file_unique_id": "AQAEEWsbYNTJVnI",
+        "file_size": 20553,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCE5q2LE7cTo8MAN2sJ20CQ_aXTphvwADEWsbYNTJVrDu53TMjWJaAQADAgADeAADPQQ",
+        "file_unique_id": "AQAEEWsbYNTJVn0",
+        "file_size": 98851,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCE5q2LE7cTo8MAN2sJ20CQ_aXTphvwADEWsbYNTJVrDu53TMjWJaAQADAgADeQADPQQ",
+        "file_unique_id": "AQAEEWsbYNTJVn4",
+        "file_size": 232724,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCE5q2LE7cTo8MAN2sJ20CQ_aXTphvwADEWsbYNTJVrDu53TMjWJaAQADAgADdwADPQQ",
+        "file_unique_id": "AQAEEWsbYNTJVnw",
+        "file_size": 326712,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
