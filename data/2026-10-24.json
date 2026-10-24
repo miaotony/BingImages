@@ -1,0 +1,87 @@
+{
+  "name": "OHR.PortugueseLibrary_ZH-CN7096893027",
+  "urlbase": "/th?id=OHR.PortugueseLibrary_ZH-CN7096893027",
+  "copyright_cn": "皇家葡萄牙语阅览室，里约热内卢，巴西 (© Antonio Salaverry/Shutterstock)",
+  "copyrightlink": "/search?q=%e7%9a%87%e5%ae%b6%e8%91%a1%e8%90%84%e7%89%99%e8%af%ad%e9%98%85%e8%a7%88%e5%ae%a4&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Royal Portuguese Cabinet of Reading, Rio de Janeiro, Brazil (© Antonio Salaverry/Shutterstock)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.PortugueseLibrary_ZH-CN7096893027_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 16986,
+        "file_id": "BQACAgUAAx0EUeHgWwACQlpq3JnFcbM9blUHWwMHXGydGYCKCwACMiAAAjLN6Fb6Ed6tvjpxFD0E"
+      },
+      "1920x1080": {
+        "message_id": 16987,
+        "file_id": "BQACAgUAAx0EUeHgWwACQltq3JnHZiG_dOReWQuJQOD4FnUVKQACMyAAAjLN6FbCaUdad1Yjjj0E"
+      },
+      "1024x768": {
+        "message_id": 16988,
+        "file_id": "BQACAgUAAx0EUeHgWwACQlxq3JnIoASI9P3dbIQg0GF5l1bzqgACNCAAAjLN6FZxB5dxfu0Gij0E"
+      },
+      "1366x768": {
+        "message_id": 16989,
+        "file_id": "BQACAgUAAx0EUeHgWwACQl1q3JnJOBBJDDPvjdAAAXZl1Ouz4NgAAjUgAAIyzehWS0TwKf94bYc9BA"
+      },
+      "800x480": {
+        "message_id": 16990,
+        "file_id": "BQACAgUAAx0EUeHgWwACQl5q3JnKPYFKWQXsgWP2bZ3MhBxpGQACNiAAAjLN6Fa5AAHAqUT_sAg9BA"
+      },
+      "1080x1920": {
+        "message_id": 16991,
+        "file_id": "BQACAgUAAx0EUeHgWwACQl9q3JnMKe4w84MLUW6BxCl0HUa43QACNyAAAjLN6FbwzAzy2phmnD0E"
+      },
+      "480x800": {
+        "message_id": 16992,
+        "file_id": "BQACAgUAAx0EUeHgWwACQmBq3JnNUk_4cy1kw3hubWaBRYULfwACOCAAAjLN6FaJtPS3kNUbkz0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFFq3JnPZSgW2X6vs6WGMKMdnjxpRAACuBNrGxrX6FY86_a-vAfPKgEAAwIAA3MAAz0E",
+        "file_unique_id": "AQADuBNrGxrX6FZ4",
+        "file_size": 1245,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFFq3JnPZSgW2X6vs6WGMKMdnjxpRAACuBNrGxrX6FY86_a-vAfPKgEAAwIAA20AAz0E",
+        "file_unique_id": "AQADuBNrGxrX6FZy",
+        "file_size": 26471,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFFq3JnPZSgW2X6vs6WGMKMdnjxpRAACuBNrGxrX6FY86_a-vAfPKgEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADuBNrGxrX6FZ9",
+        "file_size": 147070,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFFq3JnPZSgW2X6vs6WGMKMdnjxpRAACuBNrGxrX6FY86_a-vAfPKgEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADuBNrGxrX6FZ8",
+        "file_size": 340818,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFFq3JnPZSgW2X6vs6WGMKMdnjxpRAACuBNrGxrX6FY86_a-vAfPKgEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADuBNrGxrX6FZ-",
+        "file_size": 352651,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
