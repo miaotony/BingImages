@@ -1,0 +1,87 @@
+{
+  "name": "OHR.PondCypress_ZH-CN9472607734",
+  "urlbase": "/th?id=OHR.PondCypress_ZH-CN9472607734",
+  "copyright_cn": "秋叶缤纷的池杉林，乔治亚州，美国 (© Chris Moore/Getty Images)",
+  "copyrightlink": "/search?q=%e6%b1%a0%e6%9d%89&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "A grove of pond cypress trees with fall foliage, Georgia, USA (© Chris Moore/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.PondCypress_ZH-CN9472607734_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17002,
+        "file_id": "BQACAgUAAx0EUeHgWwACQmpq4J4s1yX8ct060HuGswxzUZJFUQAC8CQAAmXrCVd9d_5-L_WkjT0E"
+      },
+      "1920x1080": {
+        "message_id": 17003,
+        "file_id": "BQACAgUAAx0EUeHgWwACQmtq4J4t_pDWg54t3ETWjzeSfJasgAAC8SQAAmXrCVfjpq8C37Vpkj0E"
+      },
+      "1024x768": {
+        "message_id": 17004,
+        "file_id": "BQACAgUAAx0EUeHgWwACQmxq4J4uffQAAeI8nY0bStQ_eQ92-3cAAvIkAAJl6wlXURfRrpMmfAABPQQ"
+      },
+      "1366x768": {
+        "message_id": 17005,
+        "file_id": "BQACAgUAAx0EUeHgWwACQm1q4J4wOmJ9sZ-cYY1rd8j1A6YMGAAC8yQAAmXrCVdUqN8zrRJXKD0E"
+      },
+      "800x480": {
+        "message_id": 17006,
+        "file_id": "BQACAgUAAx0EUeHgWwACQm5q4J4xs2t4iemE_Ao9449qXFGWGgAC9CQAAmXrCVetCpENlrXZqD0E"
+      },
+      "1080x1920": {
+        "message_id": 17007,
+        "file_id": "BQACAgUAAx0EUeHgWwACQm9q4J4zLUENfbBzaC_J7GNzS2pFswAC9SQAAmXrCVfH7YD6mqUCXz0E"
+      },
+      "480x800": {
+        "message_id": 17008,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnBq4J40f6X0EehgDeM8FWADor7t9gAC9iQAAmXrCVcPk_DsLzHAdj0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFNq4J43yBBSop5mz-FWVgqsgRwTJAAC0RNrG8DACFft7v4LxIQBtwEAAwIAA3MAAz0E",
+        "file_unique_id": "AQAD0RNrG8DACFd4",
+        "file_size": 1461,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFNq4J43yBBSop5mz-FWVgqsgRwTJAAC0RNrG8DACFft7v4LxIQBtwEAAwIAA20AAz0E",
+        "file_unique_id": "AQAD0RNrG8DACFdy",
+        "file_size": 26814,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFNq4J43yBBSop5mz-FWVgqsgRwTJAAC0RNrG8DACFft7v4LxIQBtwEAAwIAA3gAAz0E",
+        "file_unique_id": "AQAD0RNrG8DACFd9",
+        "file_size": 147775,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFNq4J43yBBSop5mz-FWVgqsgRwTJAAC0RNrG8DACFft7v4LxIQBtwEAAwIAA3cAAz0E",
+        "file_unique_id": "AQAD0RNrG8DACFd8",
+        "file_size": 334001,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFNq4J43yBBSop5mz-FWVgqsgRwTJAAC0RNrG8DACFft7v4LxIQBtwEAAwIAA3kAAz0E",
+        "file_unique_id": "AQAD0RNrG8DACFd-",
+        "file_size": 363627,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
