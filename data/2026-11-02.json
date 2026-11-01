@@ -1,0 +1,87 @@
+{
+  "name": "OHR.HudsonBear_ZH-CN6630706907",
+  "urlbase": "/th?id=OHR.HudsonBear_ZH-CN6630706907",
+  "copyright_cn": "北极熊和幼崽，哈得孙湾畔，马尼托巴省，加拿大 (© Danita Delimont/Adobe Stock)",
+  "copyrightlink": "/search?q=%e5%8c%97%e6%9e%81%e7%86%8a%e5%91%a8&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Black Forest, Baden-Württemberg, Germany (© Britus/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.HudsonBear_ZH-CN6630706907_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17010,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnJq562Tx6fNl3DlzOBw4yjdC-4dHgACXC4AAuJiQFdcPGxnBBFZ_j0E"
+      },
+      "1920x1080": {
+        "message_id": 17011,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnNq562UHvAZ3R-yl73fdQN4chWvHAACXS4AAuJiQFeYjchl510byz0E"
+      },
+      "1024x768": {
+        "message_id": 17012,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnRq562V0iqjIhrpuh7g8UfkNzDuYwACXi4AAuJiQFeX66FvgU0Nbz0E"
+      },
+      "1366x768": {
+        "message_id": 17013,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnVq562WVwVFYAMq8IxTXXI9RZLxQgACXy4AAuJiQFdhbaIg4o2LaD0E"
+      },
+      "800x480": {
+        "message_id": 17014,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnZq562X-xcBG3zFlIeP3HaEccIeAgACYC4AAuJiQFekzJ5BL3rojz0E"
+      },
+      "1080x1920": {
+        "message_id": 17015,
+        "file_id": "BQACAgUAAx0EUeHgWwACQndq562Ya6DtTELzSd1TC8jxRAqAxwACYS4AAuJiQFfa99z9rOnOtj0E"
+      },
+      "480x800": {
+        "message_id": 17016,
+        "file_id": "BQACAgUAAx0EUeHgWwACQnhq562ah1KDDvdwyUSJLHOakWJYIwACYi4AAuJiQFcufke7H0Zu_j0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFRq562cFm_WPn3FlNBvYzz7OZFqngACOBJrG03DQVd0qjRO73dJ2AEAAwIAA3MAAz0E",
+        "file_unique_id": "AQADOBJrG03DQVd4",
+        "file_size": 1274,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFRq562cFm_WPn3FlNBvYzz7OZFqngACOBJrG03DQVd0qjRO73dJ2AEAAwIAA20AAz0E",
+        "file_unique_id": "AQADOBJrG03DQVdy",
+        "file_size": 17624,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFRq562cFm_WPn3FlNBvYzz7OZFqngACOBJrG03DQVd0qjRO73dJ2AEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADOBJrG03DQVd9",
+        "file_size": 83602,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFRq562cFm_WPn3FlNBvYzz7OZFqngACOBJrG03DQVd0qjRO73dJ2AEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADOBJrG03DQVd-",
+        "file_size": 204209,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCFRq562cFm_WPn3FlNBvYzz7OZFqngACOBJrG03DQVd0qjRO73dJ2AEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADOBJrG03DQVd8",
+        "file_size": 336065,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
