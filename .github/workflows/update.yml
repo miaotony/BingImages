@@ -10,8 +10,8 @@ on:
       - 'script/crawler.py'
       - '.github/workflows/update.yml'
   schedule:
-    # 15:00 every day Asia/Shanghai
-    - cron: "0 7 * * *"
+    # 12:01 every day Asia/Shanghai
+    - cron: "1 4 * * *"
 
 permissions:
   contents: write
