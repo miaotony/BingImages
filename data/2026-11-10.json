@@ -1,0 +1,87 @@
+{
+  "name": "OHR.RoseIsland_ZH-CN6477140814",
+  "urlbase": "/th?id=OHR.RoseIsland_ZH-CN6477140814",
+  "copyright_cn": "玫瑰岛航拍图，巴哈马 (© Abstract Aerial Art/Getty Images)",
+  "copyrightlink": "/search?q=%e5%b7%b4%e5%93%88%e9%a9%ac%e7%8e%ab%e7%91%b0%e5%b2%9b&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Aerial view of Rose Island, The Bahamas (© Abstract Aerial Art/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.RoseIsland_ZH-CN6477140814_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17082,
+        "file_id": "BQACAgUAAx0EUeHgWwACQrpq8wdAgzi-MYn73Gp_wiy2XT4s6QACgygAAlWrmVd8UgxcnVfufD0E"
+      },
+      "1920x1080": {
+        "message_id": 17083,
+        "file_id": "BQACAgUAAx0EUeHgWwACQrtq8wdCVIaS6-aD_pO-y3BudJe1_QAChCgAAlWrmVdM6sNnRxp5cT0E"
+      },
+      "1024x768": {
+        "message_id": 17084,
+        "file_id": "BQACAgUAAx0EUeHgWwACQrxq8wdDtAIsECQ936v-mO2qUxgF8gAChSgAAlWrmVd8T65qnJQ3uT0E"
+      },
+      "1366x768": {
+        "message_id": 17085,
+        "file_id": "BQACAgUAAx0EUeHgWwACQr1q8wdE7YfjbnPiAk4kcUf1zx-JOAAChigAAlWrmVc5TakHnljK5D0E"
+      },
+      "800x480": {
+        "message_id": 17086,
+        "file_id": "BQACAgUAAx0EUeHgWwACQr5q8wdGi8wwQRGAaOg-fyIBP9SryQAChygAAlWrmVdyVUMKjwF7RD0E"
+      },
+      "1080x1920": {
+        "message_id": 17087,
+        "file_id": "BQACAgUAAx0EUeHgWwACQr9q8wdHhLmrAAFiXxlEmQzdfkgsPRsAAogoAAJVq5lX2L_1Jszvkk89BA"
+      },
+      "480x800": {
+        "message_id": 17088,
+        "file_id": "BQACAgUAAx0EUeHgWwACQsBq8wdJ8gv_V36nnjnaarmr7HB6CAACiSgAAlWrmVf6lKOWy23mNj0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF1q8wdLKwc3iMUvAAGxHtINW_YfVtkAAt4VaxvRFZlXqNYidFh2zJIBAAMCAANzAAM9BA",
+        "file_unique_id": "AQAD3hVrG9EVmVd4",
+        "file_size": 1177,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF1q8wdLKwc3iMUvAAGxHtINW_YfVtkAAt4VaxvRFZlXqNYidFh2zJIBAAMCAANtAAM9BA",
+        "file_unique_id": "AQAD3hVrG9EVmVdy",
+        "file_size": 16249,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF1q8wdLKwc3iMUvAAGxHtINW_YfVtkAAt4VaxvRFZlXqNYidFh2zJIBAAMCAAN4AAM9BA",
+        "file_unique_id": "AQAD3hVrG9EVmVd9",
+        "file_size": 84567,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF1q8wdLKwc3iMUvAAGxHtINW_YfVtkAAt4VaxvRFZlXqNYidFh2zJIBAAMCAAN5AAM9BA",
+        "file_unique_id": "AQAD3hVrG9EVmVd-",
+        "file_size": 214094,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF1q8wdLKwc3iMUvAAGxHtINW_YfVtkAAt4VaxvRFZlXqNYidFh2zJIBAAMCAAN3AAM9BA",
+        "file_unique_id": "AQAD3hVrG9EVmVd8",
+        "file_size": 333586,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
