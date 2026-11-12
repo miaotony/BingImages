@@ -1,0 +1,87 @@
+{
+  "name": "OHR.NorthWindow_ZH-CN6734579353",
+  "urlbase": "/th?id=OHR.NorthWindow_ZH-CN6734579353",
+  "copyright_cn": "北窗，拱门国家公园，莫阿布，犹他州，美国 (© lightphoto/Getty Images)",
+  "copyrightlink": "/search?q=%e6%8b%b1%e9%97%a8%e5%9b%bd%e5%ae%b6%e5%85%ac%e5%9b%ad&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "North Window, Arches National Park, Moab, Utah (© lightphoto/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17098,
+        "file_id": "BQACAgUAAx0EUeHgWwACQspq9aryCd3FbJ_Xw9FMWZnwGqfGZwACPi4AAopZsVeANoemhda4pT0E"
+      },
+      "1920x1080": {
+        "message_id": 17099,
+        "file_id": "BQACAgUAAx0EUeHgWwACQstq9ar0E_cXWzrTRKsjt63aKIoIlgACPy4AAopZsVdh_cCPqdEhbj0E"
+      },
+      "1024x768": {
+        "message_id": 17100,
+        "file_id": "BQACAgUAAx0EUeHgWwACQsxq9ar1S_6pPjVKN9RCRqPa6EfjOgACQC4AAopZsVdY5gJMG60q1j0E"
+      },
+      "1366x768": {
+        "message_id": 17101,
+        "file_id": "BQACAgUAAx0EUeHgWwACQs1q9ar2gJnJgue19wfIuwYn-e--CwACQS4AAopZsVe5W0o77HJFAz0E"
+      },
+      "800x480": {
+        "message_id": 17102,
+        "file_id": "BQACAgUAAx0EUeHgWwACQs5q9ar4Q5HpQZoK7O7Nvv0hQFk7ywACQi4AAopZsVdzWE3uw0N32z0E"
+      },
+      "1080x1920": {
+        "message_id": 17103,
+        "file_id": "BQACAgUAAx0EUeHgWwACQs9q9ar56EIr2xgikO5R6a3bypg8PAACQy4AAopZsVdGXDYWWAGAGD0E"
+      },
+      "480x800": {
+        "message_id": 17104,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtBq9ar6NkFaIRFqyO-fv1n1wGowlgACRC4AAopZsVeynGlh850uGD0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF9q9ar95YrZKMQjSq7lBTvXYj2WOAACsxZrGxiUsVc_Th8gPSMxGAEAAwIAA3MAAz0E",
+        "file_unique_id": "AQADsxZrGxiUsVd4",
+        "file_size": 1344,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF9q9ar95YrZKMQjSq7lBTvXYj2WOAACsxZrGxiUsVc_Th8gPSMxGAEAAwIAA20AAz0E",
+        "file_unique_id": "AQADsxZrGxiUsVdy",
+        "file_size": 23984,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF9q9ar95YrZKMQjSq7lBTvXYj2WOAACsxZrGxiUsVc_Th8gPSMxGAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADsxZrGxiUsVd9",
+        "file_size": 126799,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF9q9ar95YrZKMQjSq7lBTvXYj2WOAACsxZrGxiUsVc_Th8gPSMxGAEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADsxZrGxiUsVd-",
+        "file_size": 309815,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCF9q9ar95YrZKMQjSq7lBTvXYj2WOAACsxZrGxiUsVc_Th8gPSMxGAEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADsxZrGxiUsVd8",
+        "file_size": 333226,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
