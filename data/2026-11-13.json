@@ -1,0 +1,87 @@
+{
+  "name": "OHR.AbrahamCanada_ZH-CN0344365912",
+  "urlbase": "/th?id=OHR.AbrahamCanada_ZH-CN0344365912",
+  "copyright_cn": "亚伯拉罕湖，艾伯塔省，加拿大 (© Guang Cao/Getty Images)",
+  "copyrightlink": "/search?q=%e8%89%be%e4%bc%af%e5%a1%94%e7%9c%81%e4%ba%9a%e4%bc%af%e6%8b%89%e7%bd%95%e6%b9%96&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Abraham Lake in Alberta, Canada (© Guang Cao/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.AbrahamCanada_ZH-CN0344365912_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17106,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtJq9vjJX_K3J8rTy8-hdXUSiJkhAwACXyIAAqUDuFeZ63vlh_Q68z0E"
+      },
+      "1920x1080": {
+        "message_id": 17107,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtNq9vjLZsslLJEK8nVXFLqR9BHaVwACYCIAAqUDuFeGJsKWk8TkdT0E"
+      },
+      "1024x768": {
+        "message_id": 17108,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtRq9vjMxoScx1Z8pyg3Dx_FuPtXswACYSIAAqUDuFe7D6FW0E5OrT0E"
+      },
+      "1366x768": {
+        "message_id": 17109,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtVq9vjNrQ2VXR0Ffa__sopajAE4fwACYiIAAqUDuFduNVpKqVMmHz0E"
+      },
+      "800x480": {
+        "message_id": 17110,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtZq9vjOlc865BlU453adbgay80lkQACYyIAAqUDuFfuqGGPM4vyXz0E"
+      },
+      "1080x1920": {
+        "message_id": 17111,
+        "file_id": "BQACAgUAAx0EUeHgWwACQtdq9vjQXNwggvbC_L32WnOV5LGr2wACZCIAAqUDuFeV1q4mMX-4dz0E"
+      },
+      "480x800": {
+        "message_id": 17112,
+        "file_id": "BQACAgUAAx0EUeHgWwACQthq9vjRaAyGZRErGFCgtK_-buJ4jwACZSIAAqUDuFdssadEvFeOLj0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGBq9vjTa5_TAcDaf5xu_ekmf0x2HQACIhVrG5dWuVfCZjIltc2IHAEAAwIAA3MAAz0E",
+        "file_unique_id": "AQADIhVrG5dWuVd4",
+        "file_size": 1129,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGBq9vjTa5_TAcDaf5xu_ekmf0x2HQACIhVrG5dWuVfCZjIltc2IHAEAAwIAA20AAz0E",
+        "file_unique_id": "AQADIhVrG5dWuVdy",
+        "file_size": 14681,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGBq9vjTa5_TAcDaf5xu_ekmf0x2HQACIhVrG5dWuVfCZjIltc2IHAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADIhVrG5dWuVd9",
+        "file_size": 68727,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGBq9vjTa5_TAcDaf5xu_ekmf0x2HQACIhVrG5dWuVfCZjIltc2IHAEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADIhVrG5dWuVd-",
+        "file_size": 166215,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGBq9vjTa5_TAcDaf5xu_ekmf0x2HQACIhVrG5dWuVfCZjIltc2IHAEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADIhVrG5dWuVd8",
+        "file_size": 317603,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
