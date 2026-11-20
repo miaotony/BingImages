@@ -1,0 +1,87 @@
+{
+  "name": "OHR.Megaptera_ZH-CN3361807823",
+  "urlbase": "/th?id=OHR.Megaptera_ZH-CN3361807823",
+  "copyright_cn": "正在潜水的座头鲸，挪威北部特罗姆斯的克瓦尔岛 (© Espen Bergersen/Minden Pictures)",
+  "copyrightlink": "/search?q=%e5%ba%a7%e5%a4%b4%e9%b2%b8&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Diving humpback whale (Megaptera novaeangliae) Kvaloya, Troms, Northern Norway (© Espen Bergersen/Minden Pictures)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.Megaptera_ZH-CN3361807823_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17162,
+        "file_id": "BQACAgUAAx0EUeHgWwACQwprAAE79NLdCYskH14e9yHJq9Fl7XcAAj4lAAIfwwFUYbDT-KcmXQk9BA"
+      },
+      "1920x1080": {
+        "message_id": 17163,
+        "file_id": "BQACAgUAAx0EUeHgWwACQwtrAAE79bD20_sK1mkUYzvO598eKTYAAj8lAAIfwwFU2kf5f63x3Jo9BA"
+      },
+      "1024x768": {
+        "message_id": 17164,
+        "file_id": "BQACAgUAAx0EUeHgWwACQwxrAAE799JM8b-iCuHCO75DJRuvnrwAAkAlAAIfwwFU8rHsxeHWclU9BA"
+      },
+      "1366x768": {
+        "message_id": 17165,
+        "file_id": "BQACAgUAAx0EUeHgWwACQw1rAAE7-B49FLBZVmgCQf_8E0aihTgAAkElAAIfwwFUwL9ttRD6U2I9BA"
+      },
+      "800x480": {
+        "message_id": 17166,
+        "file_id": "BQACAgUAAx0EUeHgWwACQw5rAAE7-f9gabAt3VE9DHhYXff-upIAAkIlAAIfwwFU-1wOOmcvwkw9BA"
+      },
+      "1080x1920": {
+        "message_id": 17167,
+        "file_id": "BQACAgUAAx0EUeHgWwACQw9rAAE7-jyRM2r0o8weldvPSQHn0BMAAkMlAAIfwwFUKOFK-o8Vmsc9BA"
+      },
+      "480x800": {
+        "message_id": 17168,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxBrAAE7_O7A15RUydTgM5qe9DUO3_kAAkQlAAIfwwFUIeV0-diPwYg9BA"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGdrAAE7_kl0mUmaeUDKy2DMW09Cv2IAAqEUaxuFxAFU38PrWoSu6XcBAAMCAANzAAM9BA",
+        "file_unique_id": "AQADoRRrG4XEAVR4",
+        "file_size": 1065,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGdrAAE7_kl0mUmaeUDKy2DMW09Cv2IAAqEUaxuFxAFU38PrWoSu6XcBAAMCAANtAAM9BA",
+        "file_unique_id": "AQADoRRrG4XEAVRy",
+        "file_size": 12164,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGdrAAE7_kl0mUmaeUDKy2DMW09Cv2IAAqEUaxuFxAFU38PrWoSu6XcBAAMCAAN4AAM9BA",
+        "file_unique_id": "AQADoRRrG4XEAVR9",
+        "file_size": 56926,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGdrAAE7_kl0mUmaeUDKy2DMW09Cv2IAAqEUaxuFxAFU38PrWoSu6XcBAAMCAAN5AAM9BA",
+        "file_unique_id": "AQADoRRrG4XEAVR-",
+        "file_size": 145129,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGdrAAE7_kl0mUmaeUDKy2DMW09Cv2IAAqEUaxuFxAFU38PrWoSu6XcBAAMCAAN3AAM9BA",
+        "file_unique_id": "AQADoRRrG4XEAVR8",
+        "file_size": 290716,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
