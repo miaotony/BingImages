@@ -1,0 +1,87 @@
+{
+  "name": "OHR.RedNice_ZH-CN3518429866",
+  "urlbase": "/th?id=OHR.RedNice_ZH-CN3518429866",
+  "copyright_cn": "法国普罗旺斯-阿尔卑斯-蔚蓝海岸大区尼斯 (© Siripong Kaewla-iad/Getty Images)",
+  "copyrightlink": "/search?q=%e6%b3%95%e5%9b%bd%e5%b0%bc%e6%96%af&form=hpcapt&mkt=zh-cn",
+  "desc": "",
+  "copyright": "Nice, Provence-Alpes-Côte d'Azur, France (© Siripong Kaewla-iad/Getty Images)",
+  "raw_size": "3840x2160",
+  "url": {
+    "UHD": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_UHD.jpg",
+    "1920x1080": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_1920x1080.jpg",
+    "1024x768": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_1024x768.jpg",
+    "1366x768": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_1366x768.jpg",
+    "800x480": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_800x480.jpg",
+    "1080x1920": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_1080x1920.jpg",
+    "480x800": "https://www.bing.com/th?id=OHR.RedNice_ZH-CN3518429866_480x800.jpg"
+  },
+  "telegram": {
+    "archive": {
+      "UHD": {
+        "message_id": 17170,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxJrAYc-tW_sL-o9n5u-iWp4_dhwQwACLSMAAh_DCVQWd1GVgQfiYj0E"
+      },
+      "1920x1080": {
+        "message_id": 17171,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxNrAYdAfrH3GqbQrS1CucRelP77_wACLiMAAh_DCVSZbdN0T1pHcT0E"
+      },
+      "1024x768": {
+        "message_id": 17172,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxRrAYdBlKEzh6IeloD6h3QgXe8lwAACLyMAAh_DCVSHu-4QN1Lz9z0E"
+      },
+      "1366x768": {
+        "message_id": 17173,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxVrAYdChljO8GJx8BdzYyggaSCF-gACMCMAAh_DCVReiJsId0TZCT0E"
+      },
+      "800x480": {
+        "message_id": 17174,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxZrAYdDWE24vpN4YCRqWEk7lAcH4gACMSMAAh_DCVS0QYpy1bsF5D0E"
+      },
+      "1080x1920": {
+        "message_id": 17175,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxdrAYdFpnbOupdRJVzGo9vXIi8e-QACMiMAAh_DCVSytxsZOJuNPD0E"
+      },
+      "480x800": {
+        "message_id": 17176,
+        "file_id": "BQACAgUAAx0EUeHgWwACQxhrAYdGcqxjfoiOZym6WyTv0ZUS1gACMyMAAh_DCVRDEA8jmw3rzz0E"
+      }
+    },
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGhrAYdIyY-8z7oatwx3CLVi3cSv_QACjRVrG4XEEVR9wXI3cIegIQEAAwIAA3MAAz0E",
+        "file_unique_id": "AQADjRVrG4XEEVR4",
+        "file_size": 1456,
+        "width": 90,
+        "height": 51
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGhrAYdIyY-8z7oatwx3CLVi3cSv_QACjRVrG4XEEVR9wXI3cIegIQEAAwIAA20AAz0E",
+        "file_unique_id": "AQADjRVrG4XEEVRy",
+        "file_size": 26944,
+        "width": 320,
+        "height": 180
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGhrAYdIyY-8z7oatwx3CLVi3cSv_QACjRVrG4XEEVR9wXI3cIegIQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADjRVrG4XEEVR9",
+        "file_size": 146743,
+        "width": 800,
+        "height": 450
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGhrAYdIyY-8z7oatwx3CLVi3cSv_QACjRVrG4XEEVR9wXI3cIegIQEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADjRVrG4XEEVR8",
+        "file_size": 339616,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file_id": "AgACAgUAAx0ESGLKMAACCGhrAYdIyY-8z7oatwx3CLVi3cSv_QACjRVrG4XEEVR9wXI3cIegIQEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADjRVrG4XEEVR-",
+        "file_size": 357010,
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
